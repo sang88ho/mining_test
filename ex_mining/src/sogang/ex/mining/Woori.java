@@ -98,6 +98,11 @@ public class Woori {
 				}
 				++i;
 			}
+			
+		}
+		
+		for (Exchange exchange : exhanges) {
+			System.out.println(exchange.toString());
 		}
 	}
 }

@@ -5,6 +5,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class Exchange {
+	
 	private static final SimpleDateFormat sdf = new SimpleDateFormat("yyyy. MM. dd HH:mm:ss");
 	
 	private Integer id;

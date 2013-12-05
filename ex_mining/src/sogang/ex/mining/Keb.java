@@ -15,13 +15,21 @@ import org.jsoup.select.Elements;
 
 import sogang.ex.mining.exchange.Exchange;
 
+
+
 public class Keb {
 
 	public static void main(String[] args) throws IOException, ParseException {
-		Document doc = Jsoup.connect("http://fx.keb.co.kr/FER1101C.web?schID=fex&mID=FER1101C").get();
+		Document doc = Jsoup.connect("http://fx.keb.co.kr/FER1101C.web?schID=fex&mID=FER1101C")
+				//"http://banking.shinhan.com/contents/forcenter/fx_rate/finance_exchange_view001.xml")
+				//"http://banking.shinhan.com/contents/forcenter/fx_rate/finance_exchange_list001.xml")
+//				.referrer("http://banking.shinhan.com")
+				.get();
 		
+		// 데이터가 있는 주소
 		System.out.println(doc.data());
 		
+		System.out.println("Done");
 		/*
 		Elements ddElements = doc.getElementsByTag("dd");
 		
