@@ -10,12 +10,15 @@ import java.net.URLConnection;
 
 public class GetAllPageData {
 
+	private static BufferedWriter file;
 	private static URL conn;
 	
 	public static void main(String[] args) throws IOException   {
 		//GetAllPageData("http://fx.keb.co.kr/FER1101C.web?schID=fex&mID=FER1101C");
 		GetAllPageData gt = new GetAllPageData("https://okbfex.kbstar.com/quics?page=C015690");
 		gt.getAllDataFromTargetPage();
+		
+		
 	}
 	
 	public GetAllPageData() {}
@@ -24,20 +27,23 @@ public class GetAllPageData {
 	}
 	
 	public static void getAllDataFromTargetPage() throws IOException {
-		getAllDataFromTargetPage("C:\\DefaultDataTextFile.txt");	
+		getAllDataFromTargetPage("NOFILECREATE");	
 	}
 	
 	public static void getAllDataFromTargetPage(String saveTxtFileName) throws IOException {
 	
-		BufferedWriter file = new BufferedWriter(new FileWriter(saveTxtFileName)); 
+		if (saveTxtFileName != "NOFILECREATE")
+			file = new BufferedWriter(new FileWriter(saveTxtFileName)); 
+		
 		// 긁어오려는 주소 입력
 		URLConnection con = conn.openConnection();
-		BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
-		
+		BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));		
 		String line = null;
+		
 		while (( line = in.readLine()) != null) {
 			System.out.println(line);
-			file.write(line);
+			if (saveTxtFileName != "NOFILECREATE")
+				file.write(line);
 		}
 		in.close();		
 	}
