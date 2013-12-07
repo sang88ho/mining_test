@@ -1,13 +1,12 @@
 package sogang.ex.outputgenerator;
 
-import java.net.URLConnection;
 import java.sql.*;
 
 public class DatabaseSearch {
 
-	private String url= "jdbc:mysql://127.0.0.1:3306";
-	private String id= "root";// 사용자계정
-	private String pwd= "root";// 사용자 패스워드
+	private final String url= "jdbc:mysql://127.0.0.1:3306";
+	private final String id= "root";// 사용자계정
+	private final String pwd= "root";// 사용자 패스워드
     private Connection conn;
     private Statement state;
     private ResultSet result;
@@ -18,6 +17,18 @@ public class DatabaseSearch {
     
     public DatabaseSearch() {
     	MySQLLogin();
+    }
+    
+    public void searchMoneyCode(String MoneyCode) throws SQLException {
+		result = state.executeQuery("select * from exchange");
+		
+		while(result.next()) {
+			if (result.getString(4).equals(MoneyCode))
+				for(int i=1; i<=11; i++) {
+					System.out.print(result.getString(i) + '\t');
+				}
+			System.out.println();
+		}
     }
     
 	public void MySQLLogin() {	
@@ -51,12 +62,7 @@ public class DatabaseSearch {
 			
 			
 			// Test //
-			result = state.executeQuery("select * from exchange");
-		
-			while(result.next()) {
-				System.out.println(result.getString(1));
-			}			
-				// Test //
+			this.searchMoneyCode("USD");
 		}
 		catch (SQLException e) {
 			e.printStackTrace();
