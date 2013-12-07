@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms" xml:lang="ko" lang="ko">
+<head>
+	<title>신한은행</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+	
+	<script type="text/javascript">
+	<!--
+	(function(global) {
+		//if (navigator.appName.match(/Explorer/i)!= null && navigator.appVersion.indexOf("MSIE 10") != -1) {
+			try {
+				global.createPopup();
+			} catch(e) {
+				try {
+					global["createPopup"] = function() {
+							return { document : { createStyleSheet : function() { return {}; } } };
+						};
+				} catch(e) {
+				}
+			}
+		//}
+	})(window)
+	//-->
+	</script>
+	<script type="text/javascript" src="javascript.wq?q=/bootloader"></script>
+	<script type="text/javascript" src="http://img.shinhan.com/nexhpe/common/ko/js/jquery-1.7.min.js"></script>
+	<script type="text/javascript" src="http://img.shinhan.com/nexhpe/common/fusioncharts/js/FusionCharts.js" charset="utf-8"></script> 
+	
+	<!-- <script type="text/javascript" src="http://img.shinhan.com/nexhpe/ko/js/common/Printmade2_Websquare.js"></script> -->                  
+	<script type="text/javascript" src="http://img.shinhan.com/common/printmade2/server_files/Printmade2_Websquare.js"></script>
+	<script type="text/javascript" src="http://img.shinhan.com/nexrib2/ko/js/public.js"></script>		
+	<script type="text/javascript" src="/common/ribWebsquare/js/websquareFunc.js"></script>
+	<script type="text/javascript" src="/common/ribWebsquare/js/wlcollector_www.js"></script>                                
+	<script type="text/javascript" src="/common/ribWebsquare/js/cenCategory.js"></script>
+	<script type="text/javascript" src="/common/ribWebsquare/js/cenCommon.js?idx=20130827"></script>
+	<script type="text/javascript" src="/common/ribWebsquare/js/cenCheck.js"></script>
+	<script type="text/javascript" src="/common/ribWebsquare/js/secukey_cen_hseed.js"></script>
+	<script type="text/javascript" src="/common/ribWebsquare/js/menu_property.js"></script>                                  
+	<script type="text/javascript" src="/common/rib/js/movePage_SSO.js"></script>
+	<script type="text/javascript" src="/common/js/nex2_navigation.js"></script>                                             
+	<script type="text/javascript" src="/contents/js/cenCommon.js"></script>
+	<script type="text/javascript" src="/contents/js/biz.js"></script>                                                       
+	<script type="text/javascript" src="http://img.shinhan.com/nexrib2/ko/js/common/menu_link.js"></script>                                  
+	
+	<script type="text/javascript">
+	window.onload = init;
+	var cid = "";
+	var mid = "";
+	var sid = "";
+	var pid = "";
+	var hid = "";
+	var __CUSTOMER_NAME = "";
+	var __COUPON_COUNT = "";
+	var __PageParam = "";
+	
+	var RIB_URL = "http://banking.shinhan.com";
+	var HPE_URL = "http://www.shinhan.com";
+	var SMT_URL = "http://smart.shinhan.com";
+	var FND_URL = "http://fund.shinhan.com";
+	var MIS_URL = "http://mission.shinhan.com";
+	var LON_URL = "http://loan.shinhan.com";
+	var FMY_URL = "http://family.shinhan.com";
+	var ASE_URL = "http://asset.shinhan.com";
+	var DEP_URL = "http://deposit.shinhan.com";
+	var FOR_URL = "http://fx.shinhan.com";
+	var form_strMsg = "w7p-xrib2_5";
+	
+	function init() {
+		try {
+			WebSquare.startApplication();
+			try {
+				if ("/contents/forcenter/fx_rate/finance_exchange_list001.xml".indexOf("/contents/depcenter/") > -1) {
+					top.document.title = "신한은행  | 예금센터 [ 접속서버 " + form_strMsg + " ]";
+				} else if ("/contents/forcenter/fx_rate/finance_exchange_list001.xml".indexOf("/contents/forcenter/") > -1) {
+					top.document.title = "신한은행 | 외환센터 [ 접속서버 " + form_strMsg + " ]";
+				} else {
+					top.document.title = "신한은행 | 개인뱅킹 [ 접속서버 " + form_strMsg + " ]";
+				}
+			} catch (e) {
+			}
+		} catch (e) {
+			alert(e.message);
+		}
+	}
+	</script>
+	<link rel="stylesheet" href="/websquare/skin/stylesheet_ext.css" type="text/css" />
+	
+	
+	<link rel="stylesheet" href="http://img.shinhan.com/nexrib2/ko/css/websquare/popup.css" type="text/css" />
+	<link rel="stylesheet" href="http://img.shinhan.com/nexrib2/ko/css/websquare/style.css" type="text/css" />
+	<link rel="stylesheet" href="http://img.shinhan.com/nexrib2/ko/css/websquare/menu.css" type="text/css" />
+	
+	
+	<link rel="stylesheet" href="http://img.shinhan.com/nexrib2/ko/css/websquare/layout_two.css" type="text/css" />
+
+	<!-- 공통 페이지에서는 다음의 CSS 파일들을 추가하지 않습니다. -->
+	<link rel="stylesheet" href="http://img.shinhan.com/nexrib2/ko/css/websquare/gnb_w2.css" type="text/css" />
+	<link rel="stylesheet" href="http://img.shinhan.com/nexrib2/ko/css/websquare/depcenter.css" type="text/css" />
+	<link rel="stylesheet" href="http://img.shinhan.com/nexrib2/ko/css/websquare/forcenter.css" type="text/css" />
+	<link rel="stylesheet" href="http://img.shinhan.com/nexrib2/ko/css/websquare/for_main.css" type="text/css" />
+
+	
+	<style type="text/css">
+	.w2modal { filter:alpha(opacity=0);opacity:0; }
+	</style>
+</head>
+<body></body>
+</html>
