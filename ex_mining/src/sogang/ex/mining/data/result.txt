@@ -1,110 +1,2311 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms" xml:lang="ko" lang="ko">
-<head>
-	<title>신한은행</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 
+
+
+
+
+
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="win-pop no-js lt-ie9 lt-ie8 lt-ie7" lang="ko"> <![endif]-->
+<!--[if IE 7]> <html class="win-pop no-js lt-ie9 lt-ie8" lang="ko"> <![endif]-->
+<!--[if IE 8]><html class="win-pop no-js lt-ie9" lang="ko"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="ko" class="win-pop"> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<!-- Set the viewport width to device width for mobile -->
+<meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title></title>
+<!-- Font Include -->
+<!-- <script type="text/javascript" src="https://fast.fonts.com/jsapi/9e1a98cd-cc10-4b09-bdb6-9234aeba21b8.js"></script> -->
+<!-- Included CSS Files (Compressed) -->
+
+<link rel="stylesheet" href="/np/assets/global/global.css">
+<link rel="stylesheet" href="/np/assets/stylesheets/global-font-kr.css">
+<link rel="stylesheet" href="/np/assets/pws/global-pws.css">
+<link rel="stylesheet" href="/np/assets/stylesheets/global_pws_kr.css">
+<!-- Mobile ver. -->
+<link rel="stylesheet" href="/np/assets/global/global-mobile.css">
+<link rel="stylesheet" href="/np/assets/pws/global-pws-mobile.css">
+<link rel="stylesheet" href="/np/assets/stylesheets/global_pws_kr_mobile.css">
+<script src="/np/assets/javascripts/modernizr.base.js"></script>
+
+<!-- Wiselog Start -->
+<script type="text/javascript">
+	var pszProto = (("https:" == document.location.protocol) ? "https://" : "http://" );	 
+	document.write(unescape("%3Cscript src='" + pszProto + "www.standardchartered.co.kr/np/common/js/KR/wlo.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+	_n_sid = "scHome52";
+	_n_uid_cookie = "InitechEamUID";
+	n_logging();
+</script>
+<!-- Wiselog End-->
+
+<script>document.domain = "standardchartered.co.kr";</script>
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]>
+<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<link rel="stylesheet" href="/np/assets/stylesheets/global_pws_ie.css">
+<![endif]-->
+</head>
+
+<body id="page" class="reveal-window">
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+<!--  script language="javascript" src="/initech/plugin/noframe.js"></script-->
+
+
+
+
+
+<script language="javascript" type="text/javascript" >
+var docmain = window.location.host;
+var firstdoc = docmain.indexOf('.', 0);
+docmain = docmain.substr(firstdoc+1);
+firstdoc = docmain.indexOf(':', 0);
+if ( firstdoc > 0 ) docmain = docmain.substr(0, firstdoc);
+document.domain=docmain;
+
+// 홈페이지,오픈뱅킹이면...true;
+	var __IS_OB = true;
+	var __OB_SECUREDATA = 'null'; 
+	function getOBSFD() {
+		//alert("getOBSFD:"+__OB_SECUREDATA);
+		if(__OB_SECUREDATA==null || __OB_SECUREDATA=='null' || __OB_SECUREDATA==';') __OB_SECUREDATA = '';
+		return __OB_SECUREDATA; 
+	}
 	
-	<script type="text/javascript">
-	<!--
-	(function(global) {
-		//if (navigator.appName.match(/Explorer/i)!= null && navigator.appVersion.indexOf("MSIE 10") != -1) {
-			try {
-				global.createPopup();
-			} catch(e) {
-				try {
-					global["createPopup"] = function() {
-							return { document : { createStyleSheet : function() { return {}; } } };
-						};
-				} catch(e) {
-				}
-			}
-		//}
-	})(window)
-	//-->
-	</script>
-	<script type="text/javascript" src="javascript.wq?q=/bootloader"></script>
-	<script type="text/javascript" src="http://img.shinhan.com/nexhpe/common/ko/js/jquery-1.7.min.js"></script>
-	<script type="text/javascript" src="http://img.shinhan.com/nexhpe/common/fusioncharts/js/FusionCharts.js" charset="utf-8"></script> 
+	// secureData 용 쿠키 삭제처리추가.
+	// ** 지우지마세요**
+	function __deleteCookie( cookieName ){
+		var expireDate = new Date();
+		expireDate.setDate( expireDate.getDate() - 1 );
+		document.cookie = cookieName + "= " + "; expires=" + expireDate.toGMTString() + "; path=/; domain="+docmain;
+	}
+	// secureData 가 없을경우 sso 관련 쿠키 전부 삭제...!!!
+	// ** 지우지마세요**
+	/* if(getOBSFD()=='') {
+		__deleteCookie('InitechEamUID');
+		__deleteCookie('InitechEamUIP');
+		__deleteCookie('InitechEamULAT');
+		__deleteCookie('InitechEamUTOA');
+		__deleteCookie('InitechEamUHMAC');
+		__deleteCookie('InitechEamUserType');
+		__deleteCookie('MenuTypeGB');
+		__deleteCookie('InitechEamLoginType');
+		__deleteCookie('InitechEamAuthType');
+		__deleteCookie('InitechEamCertType');
+		__deleteCookie('InitechEamMacAddress');
+		__deleteCookie('CertOID');
+		__deleteCookie('CertSerial');
+		__deleteCookie('SubjectDN');
+		__deleteCookie('CertResult');
+	} */
 	
-	<!-- <script type="text/javascript" src="http://img.shinhan.com/nexhpe/ko/js/common/Printmade2_Websquare.js"></script> -->                  
-	<script type="text/javascript" src="http://img.shinhan.com/common/printmade2/server_files/Printmade2_Websquare.js"></script>
-	<script type="text/javascript" src="http://img.shinhan.com/nexrib2/ko/js/public.js"></script>		
-	<script type="text/javascript" src="/common/ribWebsquare/js/websquareFunc.js"></script>
-	<script type="text/javascript" src="/common/ribWebsquare/js/wlcollector_www.js"></script>                                
-	<script type="text/javascript" src="/common/ribWebsquare/js/cenCategory.js"></script>
-	<script type="text/javascript" src="/common/ribWebsquare/js/cenCommon.js?idx=20130827"></script>
-	<script type="text/javascript" src="/common/ribWebsquare/js/cenCheck.js"></script>
-	<script type="text/javascript" src="/common/ribWebsquare/js/secukey_cen_hseed.js"></script>
-	<script type="text/javascript" src="/common/ribWebsquare/js/menu_property.js"></script>                                  
-	<script type="text/javascript" src="/common/rib/js/movePage_SSO.js"></script>
-	<script type="text/javascript" src="/common/js/nex2_navigation.js"></script>                                             
-	<script type="text/javascript" src="/contents/js/cenCommon.js"></script>
-	<script type="text/javascript" src="/contents/js/biz.js"></script>                                                       
-	<script type="text/javascript" src="http://img.shinhan.com/nexrib2/ko/js/common/menu_link.js"></script>                                  
-	
-	<script type="text/javascript">
-	window.onload = init;
-	var cid = "";
-	var mid = "";
-	var sid = "";
-	var pid = "";
-	var hid = "";
-	var __CUSTOMER_NAME = "";
-	var __COUPON_COUNT = "";
-	var __PageParam = "";
-	
-	var RIB_URL = "http://banking.shinhan.com";
-	var HPE_URL = "http://www.shinhan.com";
-	var SMT_URL = "http://smart.shinhan.com";
-	var FND_URL = "http://fund.shinhan.com";
-	var MIS_URL = "http://mission.shinhan.com";
-	var LON_URL = "http://loan.shinhan.com";
-	var FMY_URL = "http://family.shinhan.com";
-	var ASE_URL = "http://asset.shinhan.com";
-	var DEP_URL = "http://deposit.shinhan.com";
-	var FOR_URL = "http://fx.shinhan.com";
-	var form_strMsg = "w7p-xrib2_5";
-	
-	function init() {
-		try {
-			WebSquare.startApplication();
-			try {
-				if ("/contents/forcenter/fx_rate/finance_exchange_list001.xml".indexOf("/contents/depcenter/") > -1) {
-					top.document.title = "신한은행  | 예금센터 [ 접속서버 " + form_strMsg + " ]";
-				} else if ("/contents/forcenter/fx_rate/finance_exchange_list001.xml".indexOf("/contents/forcenter/") > -1) {
-					top.document.title = "신한은행 | 외환센터 [ 접속서버 " + form_strMsg + " ]";
-				} else {
-					top.document.title = "신한은행 | 개인뱅킹 [ 접속서버 " + form_strMsg + " ]";
-				}
-			} catch (e) {
-			}
-		} catch (e) {
-			alert(e.message);
+</script>
+<script type="text/javascript" src="/np/assets/global/global.js"></script>
+<script type="text/javascript" src="/np/common/js/common.js"></script>
+
+<script type="text/javascript" src="/np/common/js/commonscript.js"></script>
+<script type="text/javascript" src="/np/common/js/jquery_SCOIB_json2.js" ></script>
+<script type="text/javascript" src="/np/common/js/jquery_SCOIB_ajax.js" ></script>
+<script type="text/javascript" src="/np/common/js/jquery.tinysort.js" ></script>
+
+<script type="text/javascript" src="/np/assets/pws/global-pws.js"></script>
+<!--[if !IE]> -->
+<script type="text/javascript" src="/np/assets/global/global-enquire.js"></script>
+<script type="text/javascript" src="/np/assets/pws/global-pws-enquire.js"></script>
+<!-- <![endif]-->
+<script type="text/javascript" src="/np/assets/global/global-isotope.js"></script>
+<script type="text/javascript" src="/np/assets/pws/global-pws-isotope.js"> </script>
+<script type="text/javascript" src="/np/assets/pws/global-pws-cornerstamp.js"> </script>
+
+
+<!-- KOREA Ver. JS -->
+<script src="/np/assets/global/foundation-kr.js"></script>
+
+<!-- SNS 연동관련 js 입니다.페이스북관련 -->
+<script src="/np/sns/js/sharer.js"></script>
+<script src="/np/assets/global/detect-os.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+function getLogin(){
+	document.location.href = "/np/kr/cm/cc/checkLogin2.jsp?rtnUri= "+"/np/kr/pl/et/ExchangeRateP1.jsp";
+}
+
+//-->
+</script>
+<script language="javascript">
+<!--
+
+	// SecureFrame 관련 무력화 변수세팅
+    var boolEmerVal = false;
+    var emerPath = "/common/gw";
+    if(boolEmerVal==true){
+      emerPath = "/gw";	
+    }
+
+//-->
+</script>
+<script language="javascript">
+<!--
+	var isScfirst = false;
+	try {
+		//var checkDomain = opener.document.domain;
+		isScfirst = true;
+	} catch (err) {
+		isScfirst = false;
+	}
+	//alert( "boolEmerVal [ "+ boolEmerVal +" ] ---- emerPath [ "+ emerPath +" ] isScfirst [ " + isScfirst +" ] ---- ");
+	 var scriptStr  = "";
+	 if( typeof (opener) == "unknown" || typeof (opener) == "undefined"){
+	        scriptStr  = "<script language=\"javascript\" src=\"https://www.standardchartered.co.kr"+emerPath+"/secureFrameCheck.js\"></script>";
+	 } else {
+	 	if ( isScfirst) {
+		    scriptStr  = "<script language=\"javascript\" src=\"https://www.standardchartered.co.kr"+emerPath+"/secureFramePopCheck.js\"></script>";
+		} else {
+			scriptStr  = "<script language=\"javascript\" src=\"https://www.standardchartered.co.kr"+emerPath+"/secureFrameCheck.js\"></script>";
+		}
+	 }
+	//alert('scriptStr>>'+scriptStr);
+    document.write(scriptStr); 
+//-->
+</script>
+<script language="javascript">
+<!--
+	// moogfox 추가함
+ 	function rtnSFData(paramData)
+ 	{
+		return isExistSFData(paramData);
+ 	}
+
+//-->
+</script>	
+
+
+
+
+<!-- 변수 공통화 시작-->
+
+<!-- 변수 공통화 끝 -->
+
+
+
+<!-- 메소드 타입 확인 -->
+
+<script type="text/javascript">
+var methodType ="GET";
+function methodCallbackRtn(){
+	if(methodType=="POST"){
+		return true;
+	}else{
+	 	return false;
+	}
+}
+
+// 세션 스토리지에 데이터 값을 추가한다.
+if('N'== 'Y' && 'TRUE'=='null' && 'false'==='true' && window.sessionStorage) {
+	window.sessionStorage['_____isLogin'] = 'TRUE';
+}
+//세션 중복 체크...
+if('N'== 'Y' && 'false'==='true' && window.sessionStorage ) {
+	//alert(window.sessionStorage['isLogin'])
+	if(window.sessionStorage['_____isLogin']==='TRUE') {
+	//	alert("유지.");
+	} else {
+		alert("이미 SC은행 인터넷 뱅킹을 사용중인 브라우져가 존재 하거나 잘못된 접근 입니다. 모든 브라우져를 닫고 다시 시도하여 주십시요.\nThere is an active browser that you have been using internet banking with SC bank or incorrect access. Please close every browser windows opened and try again.");
+		if (navigator.appVersion.indexOf("MSIE")>=0 || navigator.userAgent.indexOf("Trident") != -1) {
+			window.open('about:blank','_self').close();
+		} else {
+			window.close();
 		}
 	}
-	</script>
-	<link rel="stylesheet" href="/websquare/skin/stylesheet_ext.css" type="text/css" />
-	
-	
-	<link rel="stylesheet" href="http://img.shinhan.com/nexrib2/ko/css/websquare/popup.css" type="text/css" />
-	<link rel="stylesheet" href="http://img.shinhan.com/nexrib2/ko/css/websquare/style.css" type="text/css" />
-	<link rel="stylesheet" href="http://img.shinhan.com/nexrib2/ko/css/websquare/menu.css" type="text/css" />
-	
-	
-	<link rel="stylesheet" href="http://img.shinhan.com/nexrib2/ko/css/websquare/layout_two.css" type="text/css" />
+}
 
-	<!-- 공통 페이지에서는 다음의 CSS 파일들을 추가하지 않습니다. -->
-	<link rel="stylesheet" href="http://img.shinhan.com/nexrib2/ko/css/websquare/gnb_w2.css" type="text/css" />
-	<link rel="stylesheet" href="http://img.shinhan.com/nexrib2/ko/css/websquare/depcenter.css" type="text/css" />
-	<link rel="stylesheet" href="http://img.shinhan.com/nexrib2/ko/css/websquare/forcenter.css" type="text/css" />
-	<link rel="stylesheet" href="http://img.shinhan.com/nexrib2/ko/css/websquare/for_main.css" type="text/css" />
+
+// 	alert("타 PC에서 로그인되어 로그아웃 처리되었습니다.  정상적인 거래가 아니시면 고객센터(1588-1599)로 문의하여 주시기 바랍니다");
+// 	_deleteCookieInfo();
+// }
+
+function _deleteCookie( cookieName ){
+	var expireDate = new Date();
+	//어제 날짜를 쿠키 소멸 날짜로 설정한다.
+	expireDate.setDate( expireDate.getDate() - 1 );
+	document.cookie = cookieName + "= " + "; expires=" + expireDate.toGMTString() + "; path=/; domain="+docmain;
+}
+
+function _deleteCookieInfo(){
+		_deleteCookie('InitechEamUID');
+		_deleteCookie('InitechEamUIP');
+		_deleteCookie('InitechEamULAT');
+		_deleteCookie('InitechEamUTOA');
+		_deleteCookie('InitechEamUHMAC');
+		_deleteCookie('InitechEamUserType');
+		_deleteCookie('MenuTypeGB');
+		_deleteCookie('InitechEamLoginType');
+		_deleteCookie('InitechEamAuthType');
+		_deleteCookie('InitechEamCertType');
+		_deleteCookie('InitechEamMacAddress');
+		_deleteCookie('CertOID');
+		_deleteCookie('CertSerial');
+		_deleteCookie('SubjectDN');
+		_deleteCookie('CertResult');
+		secureData = '';
+}
+
+
+
+var SC_URLIB = 'http://ib.standardchartered.co.kr';
+var SC_URLOIB = 'https://open.standardchartered.co.kr';
+var SC_URLOWW = 'www.standardchartered.co.kr';
+var SC_URLCIB = 'http://biz.standardchartered.co.kr';
+var isLoginCmmn = false;
+var isKor       = false;
+var langCode = 'KR';
+var useLangCodeCmmn = 'KR';
+
+/**
+ * 페이지 이동 
+ * window.location.href 와 같습니다.
+ */
+function doLocation(uri){
+	
+    // 브라우저가 ie이면서 uri경로가 인뱅일 시 
+	if((navigator.appName.indexOf("Microsoft") > -1 || navigator.userAgent.indexOf("Trident") != -1)&& 
+			(uri.indexOf("http://ib.standardchartered.co.kr") > -1 || uri.indexOf("http://biz.standardchartered.co.kr") > -1 || uri.indexOf("krs2b") > -1)) {
+		
+		
+		
+		var uri= 'http://ib.standardchartered.co.kr/nottemplate/common/ib_ascp.jsp?ReturnURL='+uri;
+	    if (uri.indexOf('?') == -1) {
+	    	uri += '?fromOb=Y&langCode=KR&secureData='+getOBSFD();
+	    } else {
+	    	uri += '&fromOb=Y&langCode=KR&secureData='+getOBSFD();
+	    }
+	    setCookie("PRE_ASCP", uri); // 나가는 경로를 쿠키에 남긴다.
+		setCookie("PRE_SECUREDATA", getOBSFD()); // 나가는 경로를 쿠키에 남긴다.
+		//alert("PRE_ASCP>>>>>>"+getCookie("PRE_ASCP"));; // 나가는 경로를 쿠키에 남긴다.
+		var preAscpUrl = "http://"+SC_URLOWW+"/gw/preAscp.html";
+		location.replace(preAscpUrl);
+	
+	// 타브라우저이면서 uri경로가 인뱅일 시
+	} else if( (navigator.appName.indexOf("Microsoft") == -1 && navigator.userAgent.indexOf("Trident") == -1)&& 
+			(uri.indexOf("http://ib.standardchartered.co.kr") > -1 || uri.indexOf("http://biz.standardchartered.co.kr") > -1 || uri.indexOf("krs2b") > -1)) {
+		
+		
+			alert("해당 메뉴는 Internet Explorer에서만 지원됩니다.");
+			return false;
+		
+		
+	} else {
+		
+		// OIB경로일 시에는 
+		if(uri.indexOf(SC_URLOIB) > -1) {
+			
+			if (uri.indexOf('?') == -1) {
+				uri += '?loginCheck=Y&certLogin=Y&toGB=&langCode=KR&fromOb=Y&secureData='+getOBSFD();
+
+			} else {
+				uri += '&loginCheck=Y&certLogin=Y&toGB=&langCode=KR&fromOb=Y&secureData='+getOBSFD();
+			}
+
+			var uri= SC_URLOIB+'/nottemplate/common/oib_ascp.jsp?ReturnURL='+uri;
+			location.replace(uri);
+			
+		// 홈페이지 경로일 시
+		} else {
+			
+			// url의 프로토콜이 http:일 때 내부에 들어오는 경우는 https:로 바꾼다.
+			if((location.protocol).indexOf("http:") > -1) {
+				uri = uri.replace("http:", "https:");
+			}
+			
+		    location.href = uri;
+		}
+	}
+	
+	return false;
+}
+
+
+
+
+function doJoinLocation(uri){
+	
+	// 브라우저가 ie이면서 uri경로가 인뱅일 시 
+	if( navigator.appName.indexOf("Microsoft") > -1 || navigator.userAgent.indexOf("Trident") != -1 ) {
+		
+		var uri= uri;
+	    if (uri.indexOf('?') == -1) {
+	    	uri += '?fromOb=Y&langCode=KR&secureData='+getOBSFD();
+	    } else {
+	    	uri += '&fromOb=Y&langCode=KR&secureData='+getOBSFD();
+	    }
+	    setCookie("PRE_ASCP", uri); // 나가는 경로를 쿠키에 남긴다.
+		setCookie("PRE_SECUREDATA", getOBSFD()); // 나가는 경로를 쿠키에 남긴다.
+		//alert("PRE_ASCP>>>>>>"+getCookie("PRE_ASCP"));; // 나가는 경로를 쿠키에 남긴다.
+		var preAscpUrl = "http://"+SC_URLOWW+"/gw/preAscp.html";
+		location.replace(preAscpUrl);
+		
+	} else if(( (navigator.appName.indexOf("Microsoft") == -1 && navigator.userAgent.indexOf("Trident") == -1)&& (uri.indexOf("openclose")>-1)) || ( (navigator.appName.indexOf("Microsoft") == -1 && navigator.userAgent.indexOf("Trident") == -1)&& (uri.indexOf("loan")>-1) && (uri.indexOf(".jsp") > -1))) {
+		
+		
+			alert("해당 메뉴는 Internet Explorer에서만 지원됩니다.");
+			return false;
+		
+		
+	} else {
+		 if (uri.indexOf('?') == -1) {
+				uri += '?loginCheck=Y&certLogin=Y&toGB=&langCode=KR&fromOb=Y&secureData='+getOBSFD();
+
+			} else {
+				uri += '&loginCheck=Y&certLogin=Y&toGB=&langCode=KR&fromOb=Y&secureData='+getOBSFD();
+			}
+
+		 	// 오픈뱅킹 로그인이 필요한 경우에 거는 것
+			//var uri= SC_URLOIB+'/nottemplate/common/oib_ascp.jsp?ReturnURL='+uri;
+			location.replace(uri);
+		}
+	return false;
+}
+
+
+
+//ie 에서만 동작하는 현재 페이지 갱신인지 새창인지 여부
+function doIeChk(uri,newWindow){
+	if(navigator.appName.indexOf("Microsoft") > -1 || navigator.userAgent.indexOf("Trident") != -1){
+		if(newWindow == 'Y'){
+			window.open(uri,"newWin");
+		}else{
+			location.href = uri;
+		}
+	}else{
+		
+			alert("해당 메뉴는 Internet Explorer에서만 지원됩니다.");
+			return false;
+		
+	}
+}
+
+
+/**
+ * 팝업창 띄우기
+ *  
+ * @param url 		: 주소
+ * @param winName 	: 윈도우명
+ * @param width 	: 넓이
+ * @param height 	: 높이
+ * @author 07564
+ */
+function doSimpleLocation(uri) {
+
+	// 브라우저가 ie이면서 uri경로가 인뱅일 시 
+		if( (navigator.appName.indexOf("Microsoft") > -1 || navigator.userAgent.indexOf("Trident") != -1)&& 
+				(uri.indexOf("http://ib.standardchartered.co.kr") > -1 || uri.indexOf("http://biz.standardchartered.co.kr") > -1)) {
+			
+			location.href = uri;
+		
+		// 타브라우저이면서 uri경로가 IB일 시
+		} else if( (navigator.appName.indexOf("Microsoft") == -1 && navigator.userAgent.indexOf("Trident") == -1)&& 
+				(uri.indexOf("http://ib.standardchartered.co.kr") > -1 || uri.indexOf("http://biz.standardchartered.co.kr") > -1)) {
+			
+				alert("해당 메뉴는 Internet Explorer에서만 지원됩니다.");
+				return false;
+			
+			
+		// 타브라우저이면서 경로가 IB가 아닐 시
+		} else {
+			
+			// OIB경로일 시에는 
+			if(uri.indexOf(SC_URLOIB) > -1) {
+				
+				location.href = uri;
+				
+			// 홈페이지 경로일 시
+			} else {
+				
+				location.href = uri;
+			}
+		}
+	
+		return false;
+}
+
+/**
+ *
+ * window.location.href 와 같습니다.
+ */
+function doMultiLocation( tobeUri, url){
+	
+	// 브라우저가 ie일 시 IB경로로 -> IB경로는 무조건 있음
+	if(navigator.appName.indexOf("Microsoft") > -1 || navigator.userAgent.indexOf("Trident") != -1) {
+		
+		var uri= 'http://ib.standardchartered.co.kr/nottemplate/common/ib_ascp.jsp?ReturnURL='+url;
+	    if (uri.indexOf('?') == -1) {
+	    	uri += '?fromOb=Y&langCode=KR&secureData='+getOBSFD();
+	    } else {
+	    	uri += '&fromOb=Y&langCode=KR&secureData='+getOBSFD();
+	    }
+	    setCookie("PRE_ASCP", uri); // 나가는 경로를 쿠키에 남긴다.
+		setCookie("PRE_SECUREDATA", getOBSFD()); // 나가는 경로를 쿠키에 남긴다.
+		//alert("PRE_ASCP>>>>>>"+getCookie("PRE_ASCP"));; // 나가는 경로를 쿠키에 남긴다.
+		var preAscpUrl = "http://"+SC_URLOWW+"/gw/preAscp.html";
+		location.replace(preAscpUrl);
+		
+	// ToBe URL이 Null이면 -> null일 경우도 있음
+	} else if(tobeUri == "" || tobeUri == null) {
+		
+			alert("해당 메뉴는 Internet Explorer에서만 지원됩니다.");
+			return false;
+		
+	
+	// 타브라우저이면서 null이 아닐 경우 -> OIB경로와 홈페이지 경로로 나누어 줘야한다.(SSO처리때문)
+	} else if(tobeUri != ""){
+		
+		if (tobeUri.indexOf('?') == -1) {
+			tobeUri += '?loginCheck=Y&certLogin=Y&toGB=&langCode=KR&fromOb=Y&secureData='+getOBSFD();
+
+		} else {
+			tobeUri += '&loginCheck=Y&certLogin=Y&toGB=&langCode=KR&fromOb=Y&secureData='+getOBSFD();
+		}
+
+		var uri= SC_URLOIB+'/nottemplate/common/oib_ascp.jsp?Lang=KR&ReturnURL='+tobeUri;
+		location.replace(uri);
+		
+	} else { /* ignore. */ }
+	
+	return false;
+}
+
+/**
+*
+* window.location.href 와 같습니다.
+*/
+function doSimpleMultiLocation( tobeUri, url){
+	
+	// 브라우저가 ie일 시 IB경로로 -> IB경로는 무조건 있음
+	if(navigator.appName.indexOf("Microsoft") > -1 || navigator.userAgent.indexOf("Trident") != -1) {
+		location.href = url;
+		
+	// ToBe URL이 Null이면 -> null일 경우도 있음
+	} else if(tobeUri == "" || tobeUri == null) {
+		
+			alert("해당 메뉴는 Internet Explorer에서만 지원됩니다.");
+			return false;
+		
+	
+	// 타브라우저이면서 null이 아닐 경우 -> OIB경로와 홈페이지 경로로 나누어 줘야한다.(SSO처리때문)
+	} else if(tobeUri != ""){
+		
+		    location.href = tobeUri;
+		
+	} else { /* ignore. */ }
+	
+	return false;
+}
+
+/**
+*
+* window.location.href 와 같습니다.
+*/
+function doSimplePopMultiLocation( tobeUri, winName, width, height, uri, winName2, width2, height2){
+	
+	// 브라우저가 ie일 시 IB경로로 -> IB경로는 무조건 있음
+	if(navigator.appName.indexOf("Microsoft") > -1 || navigator.userAgent.indexOf("Trident") != -1) {
+		window.open(uri, winName2, "width="+ width2 +",height="+ height2 +",scrollbars=yes,channelmode=no,toolbar=no,location=no,directories=no");
+		
+	// ToBe URL이 Null이면 -> null일 경우도 있음
+	} else if(tobeUri == "" || tobeUri == null) {
+		
+			alert("해당 메뉴는 Internet Explorer에서만 지원됩니다.");
+			return false;
+		
+	
+	// 타브라우저이면서 null이 아닐 경우 -> OIB경로와 홈페이지 경로로 나누어 줘야한다.(SSO처리때문)
+	} else if(tobeUri != ""){
+		
+		window.open(tobeUri, winName, "width="+ width +",height="+ height +",scrollbars=yes,channelmode=no,toolbar=no,location=no,directories=no");
+		
+	} else { /* ignore. */ }
+	
+	return false;
+}
+
+/**
+ * 팝업창 띄우기
+ *  
+ * @param url 		: 주소
+ * @param winName 	: 윈도우명
+ * @param width 	: 넓이
+ * @param height 	: 높이
+ * @author 07564
+ */
+function doWinLocation(uri, winName, width, height) {
+
+	// 브라우저가 ie이면서 uri경로가 인뱅일 시 
+	if( (navigator.appName.indexOf("Microsoft") > -1 || navigator.userAgent.indexOf("Trident") != -1)&& 
+			(uri.indexOf("http://ib.standardchartered.co.kr") > -1 || uri.indexOf("http://biz.standardchartered.co.kr") > -1)) {
+		
+		var uri= 'http://ib.standardchartered.co.kr/nottemplate/common/ib_ascp.jsp?ReturnURL='+url;
+	    if (uri.indexOf('?') == -1) {
+	    	uri += '?fromOb=Y&langCode=KR&secureData='+getOBSFD();
+	    } else {
+	    	uri += '&fromOb=Y&langCode=KR&secureData='+getOBSFD();
+	    }
+	    setCookie("PRE_ASCP", uri); // 나가는 경로를 쿠키에 남긴다.
+		setCookie("PRE_SECUREDATA", getOBSFD()); // 나가는 경로를 쿠키에 남긴다.
+		//alert("PRE_ASCP>>>>>>"+getCookie("PRE_ASCP"));; // 나가는 경로를 쿠키에 남긴다.
+		var preAscpUrl = "http://"+SC_URLOWW+"/gw/preAscp.html";
+		window.open(preAscpUrl, winName, "width="+ width +",height="+ height +",scrollbars=yes,channelmode=no,toolbar=no,location=no,directories=no");
+	
+	// 타브라우저이면서 uri경로가 IB일 시
+	} else if( (navigator.appName.indexOf("Microsoft") == -1 && navigator.userAgent.indexOf("Trident") == -1)&& 
+			(uri.indexOf("http://ib.standardchartered.co.kr") > -1 || uri.indexOf("http://biz.standardchartered.co.kr") > -1)) {
+		
+			alert("해당 메뉴는 Internet Explorer에서만 지원됩니다.");
+			return false;
+		
+		
+	// 타브라우저이면서 경로가 IB가 아닐 시
+	} else {
+		
+		// OIB경로일 시에는 
+		if(uri.indexOf(SC_URLOIB) > -1) {
+			
+			if (uri.indexOf('?') == -1) {
+				uri += '?loginCheck=Y&certLogin=Y&toGB=&langCode=KR&fromOb=Y&secureData='+getOBSFD();
+
+			} else {
+				uri += '&loginCheck=Y&certLogin=Y&toGB=&langCode=KR&fromOb=Y&secureData='+getOBSFD();
+			}
+
+			var uri= SC_URLOIB+'/nottemplate/common/oib_ascp.jsp?ReturnURL='+uri;
+			window.open(uri, winName, "width="+ width +",height="+ height +",scrollbars=yes,channelmode=no,toolbar=no,location=no,directories=no");
+			
+		// 홈페이지 경로일 시
+		} else {
+			
+			// url의 프로토콜이 http:일 때 내부에 들어오는 경우는 https:로 바꾼다.
+			if((location.protocol).indexOf("http:") > -1) {
+				uri = uri.replace("http:", "https:");
+			}
+			
+			window.open(uri, winName, "width="+ width +",height="+ height +",scrollbars=yes,channelmode=no,toolbar=no,location=no,directories=no");
+		}
+	}
+	return false;
+}
+
+/**
+ * 팝업창 띄우기
+ *  
+ * @param url 		: 주소
+ * @param winName 	: 윈도우명
+ * @param width 	: 넓이
+ * @param height 	: 높이
+ * @author 07564
+ */
+function doSimpleWinLocation(uri, winName, width, height) {
+
+	// 브라우저가 ie이면서 uri경로가 인뱅일 시 
+		if( (navigator.appName.indexOf("Microsoft") > -1 || navigator.userAgent.indexOf("Trident") != -1)&& 
+				(uri.indexOf("http://ib.standardchartered.co.kr") > -1 || uri.indexOf("http://biz.standardchartered.co.kr") > -1)) {
+			
+			window.open(uri, winName, "width="+ width +",height="+ height +",scrollbars=yes,channelmode=no,toolbar=no,location=no,directories=no");
+		
+		// 타브라우저이면서 uri경로가 IB일 시
+		} else if( (navigator.appName.indexOf("Microsoft") == -1 && navigator.userAgent.indexOf("Trident") == -1)&& 
+				(uri.indexOf("http://ib.standardchartered.co.kr") > -1 || uri.indexOf("http://biz.standardchartered.co.kr") > -1)) {
+			
+				alert("해당 메뉴는 Internet Explorer에서만 지원됩니다.");
+				return false;
+			
+			
+		// 타브라우저이면서 경로가 IB가 아닐 시
+		} else {
+			
+			// OIB경로일 시에는 
+			if(uri.indexOf(SC_URLOIB) > -1) {
+				
+				window.open(uri, winName, "width="+ width +",height="+ height +",scrollbars=yes,channelmode=no,toolbar=no,location=no,directories=no");
+				
+			// 홈페이지 경로일 시
+			} else {
+				
+				window.open(uri, winName, "width="+ width +",height="+ height +",scrollbars=yes,channelmode=no,toolbar=no,location=no,directories=no");
+			}
+		}
+	
+		return false;
+}
+
+/**
+ * 탭 띄우기
+ *  
+ * @param url 		: 주소
+ * @param winName 	: 윈도우명
+ * @param width 	: 넓이
+ * @param height 	: 높이
+ * @author 07564
+ */
+function doTabLocation(uri) {
+	
+	// 브라우저가 ie이면서 uri경로가 인뱅일 시 
+		if( (navigator.appName.indexOf("Microsoft") > -1 || navigator.userAgent.indexOf("Trident") != -1)&& 
+				(uri.indexOf("http://ib.standardchartered.co.kr") > -1 || uri.indexOf("http://biz.standardchartered.co.kr") > -1)) {
+			
+			var uri= 'http://ib.standardchartered.co.kr/nottemplate/common/ib_ascp.jsp?ReturnURL='+url;
+		    if (uri.indexOf('?') == -1) {
+		    	uri += '?fromOb=Y&langCode=KR&secureData='+getOBSFD();
+		    } else {
+		    	uri += '&fromOb=Y&langCode=KR&secureData='+getOBSFD();
+		    }
+
+			
+		    setCookie("PRE_ASCP", uri); // 나가는 경로를 쿠키에 남긴다.
+			setCookie("PRE_SECUREDATA", getOBSFD()); // 나가는 경로를 쿠키에 남긴다.
+			//alert("PRE_ASCP>>>>>>"+getCookie("PRE_ASCP"));; // 나가는 경로를 쿠키에 남긴다.
+			var preAscpUrl = "http://"+SC_URLOWW+"/gw/preAscp.html";
+			window.open(preAscpUrl);
+		
+		// 타브라우저이면서 uri경로가 IB일 시
+		} else if((navigator.appName.indexOf("Microsoft") == -1 && navigator.userAgent.indexOf("Trident") == -1) && 
+				(uri.indexOf("http://ib.standardchartered.co.kr") > -1 || uri.indexOf("http://biz.standardchartered.co.kr") > -1)) {
+			
+				alert("해당 메뉴는 Internet Explorer에서만 지원됩니다.");
+				return false;
+			
+			
+		// 타브라우저이면서 경로가 IB가 아닐 시
+		} else {
+			
+			// OIB경로일 시에는 
+			if(uri.indexOf(SC_URLOIB) > -1) {
+				
+				if (uri.indexOf('?') == -1) {
+					uri += '?loginCheck=Y&certLogin=Y&toGB=&langCode=KR&fromOb=Y&secureData='+getOBSFD();
+
+				} else {
+					uri += '&loginCheck=Y&certLogin=Y&toGB=&langCode=KR&fromOb=Y&secureData='+getOBSFD();
+				}
+
+				var uri= SC_URLOIB+'/nottemplate/common/oib_ascp.jsp?ReturnURL='+uri;
+				window.open(uri);
+				
+			// 홈페이지 경로일 시
+			} else {
+				
+				// url의 프로토콜이 http:일 때 내부에 들어오는 경우는 https:로 바꾼다.
+				if((location.protocol).indexOf("http:") > -1) {
+					uri = uri.replace("http:", "https:");
+				}
+				
+				window.open(uri);
+			}
+		}
+		return false;
+}
+
+/**
+ * 탭 띄우기
+ *  
+ * @param url 		: 주소
+ * @param winName 	: 윈도우명
+ * @param width 	: 넓이
+ * @param height 	: 높이
+ * @author 07564
+ */
+function doSimpleTabLocation(uri) {
+	
+	// 브라우저가 ie이면서 uri경로가 인뱅일 시 
+		if( (navigator.appName.indexOf("Microsoft") > -1 || navigator.userAgent.indexOf("Trident") != -1)&& 
+				(uri.indexOf("http://ib.standardchartered.co.kr") > -1 || uri.indexOf("http://biz.standardchartered.co.kr") > -1 || uri.indexOf("krs2b") > -1)) {
+			
+			window.open(uri);
+		
+		// 타브라우저이면서 uri경로가 IB일 시
+		} else if( (navigator.appName.indexOf("Microsoft") == -1 && navigator.userAgent.indexOf("Trident") == -1) && 
+				(uri.indexOf("http://ib.standardchartered.co.kr") > -1 || uri.indexOf("http://biz.standardchartered.co.kr") > -1 || uri.indexOf("krs2b") > -1)) {
+			
+				alert("해당 메뉴는 Internet Explorer에서만 지원됩니다.");
+				return false;
+			
+			
+		// 타브라우저이면서 경로가 IB가 아닐 시
+		} else {
+				
+				// OIB경로일 시에는 
+				if(uri.indexOf(SC_URLOIB) > -1) {
+					
+					if (uri.indexOf('?') == -1) {
+						uri += '?loginCheck=Y&certLogin=Y&toGB=&langCode=KR&fromOb=Y&secureData='+getOBSFD();
+
+					} else {
+						uri += '&loginCheck=Y&certLogin=Y&toGB=&langCode=KR&fromOb=Y&secureData='+getOBSFD();
+					}
+
+					var uri= SC_URLOIB+'/nottemplate/common/oib_ascp.jsp?ReturnURL='+uri;
+					window.open(uri);
+					
+				// 홈페이지 경로일 시
+				} else {
+					
+					// url의 프로토콜이 http:일 때 내부에 들어오는 경우는 https:로 바꾼다.
+					if((location.protocol).indexOf("http:") > -1) {
+						uri = uri.replace("http:", "https:");
+					}
+					
+					window.open(uri);
+				}
+		}
+	
+		return false;
+}
+
+/**
+ * 탭 띄우기(tobe, asis)
+ * window.location.href 와 같습니다.
+ */
+function doMultiTabLocation(tobeUri, uri) {
+    
+	// 브라우저가 ie일 시 IB경로로 -> IB경로는 무조건 있음
+	if(navigator.appName.indexOf("Microsoft") > -1 || navigator.userAgent.indexOf("Trident") != -1) {
+		
+		var uri= 'http://ib.standardchartered.co.kr/nottemplate/common/ib_ascp.jsp?ReturnURL='+url;
+	    if (uri.indexOf('?') == -1) {
+	    	uri += '?fromOb=Y&langCode=KR&secureData='+getOBSFD();
+	    } else {
+	    	uri += '&fromOb=Y&langCode=KR&secureData='+getOBSFD();
+	    }
+	    setCookie("PRE_ASCP", uri); // 나가는 경로를 쿠키에 남긴다.
+		setCookie("PRE_SECUREDATA", getOBSFD()); // 나가는 경로를 쿠키에 남긴다.
+		//alert("PRE_ASCP>>>>>>"+getCookie("PRE_ASCP"));; // 나가는 경로를 쿠키에 남긴다.
+		var preAscpUrl = "http://"+SC_URLOWW+"/gw/preAscp.html";
+		window.open(preAscpUrl);
+
+	// ToBe URL이 Null이면 -> null일 경우도 있음
+	} else if(tobeUri == "" || tobeUri == null) {
+		
+			alert("해당 메뉴는 Internet Explorer에서만 지원됩니다.");
+			return false;
+		
+	
+	// 타브라우저이면서 null이 아닐 경우 -> OIB경로와 홈페이지 경로로 나누어 줘야한다.(SSO처리때문)
+	} else if(tobeUri != ""){
+		
+		// OIB경로일 시에는 
+		if(tobeUri.indexOf(SC_URLOIB) > -1) {
+			
+			// OIB경로일 시에는 
+			if(tobeUri.indexOf(SC_URLOIB) > -1) {
+				
+				if (tobeUri.indexOf('?') == -1) {
+					tobeUri += '?loginCheck=Y&certLogin=Y&toGB=&langCode=KR&fromOb=Y&secureData='+getOBSFD();
+
+				} else {
+					tobeUri += '&loginCheck=Y&certLogin=Y&toGB=&langCode=KR&fromOb=Y&secureData='+getOBSFD();
+				}
+
+				var tobeUri= SC_URLOIB+'/nottemplate/common/oib_ascp.jsp?ReturnURL='+tobeUri;
+				window.open(tobeUri);
+				
+			// 홈페이지 경로일 시
+			} else {
+				
+				// url의 프로토콜이 http:일 때 내부에 들어오는 경우는 https:로 바꾼다.
+				if((location.protocol).indexOf("http:") > -1) {
+					uri = uri.replace("http:", "https:");
+				}
+				
+				window.open(tobeUri);
+			}
+		}
+		
+	} else { /* ignore. */ }
+	
+	return false;
+}
+
+/**
+ * 멀티 팝업
+ * window.location.href 와 같습니다.
+ */
+function doMultiWinLocation( tobeUri, winName, width, height, uri, winName2, width2, height2){
+	
+	// 브라우저가 ie일 시 IB경로로 -> IB경로는 무조건 있음
+	if(navigator.appName.indexOf("Microsoft") > -1 || navigator.userAgent.indexOf("Trident") != -1) {
+		
+		// secureData 관련 로직 추가.
+	    if (uri.indexOf('?') == -1) {
+	    	uri += '?fromOb=Y&secureData='+getOBSFD();
+	    } else {
+	    	uri += '&fromOb=Y&secureData='+getOBSFD();
+	    }
+		setCookie("PRE_ASCP", uri); // 나가는 경로를 쿠키에 남긴다.
+		//alert("PRE_ASCP>>>>>>"+getCookie("PRE_ASCP"));; // 나가는 경로를 쿠키에 남긴다.
+		setCookie("PRE_SECUREDATA", getOBSFD()); // 나가는 경로를 쿠키에 남긴다.
+		
+		SC_URLOWW = SC_URLOWW.replace("https:", "http:");
+		var preAscpUrl = "http://"+SC_URLOWW+"/gw/preAscp.html";
+		window.open(preAscpUrl, winName2, "width="+ width2 +",height="+ height2 +",scrollbars=yes,channelmode=no,toolbar=no,location=no,directories=no");
+
+	// ToBe URL이 Null이면 -> null일 경우도 있음
+	} else if(tobeUri == "" || tobeUri == null) {
+		
+			alert("해당 메뉴는 Internet Explorer에서만 지원됩니다.");
+			return false;
+		
+	
+	// 타브라우저이면서 null이 아닐 경우 -> OIB경로와 홈페이지 경로로 나누어 줘야한다.(SSO처리때문)
+	} else if(tobeUri != ""){
+		
+				
+				if (tobeUri.indexOf('?') == -1) {
+					tobeUri += '?loginCheck=Y&certLogin=Y&toGB=&langCode=KR&fromOb=Y&secureData='+getOBSFD();
+
+				} else {
+					tobeUri += '&loginCheck=Y&certLogin=Y&toGB=&langCode=KR&fromOb=Y&secureData='+getOBSFD();
+				}
+
+				var tobeUri= SC_URLOIB+'/nottemplate/common/oib_ascp.jsp?ReturnURL='+tobeUri;
+				window.open(tobeUri, winName, "width="+ width +",height="+ height +",scrollbars=yes,channelmode=no,toolbar=no,location=no,directories=no");
+		
+	} else { /* ignore. */ }
+	
+	return false;
+}
+
+
+// ---------------------------------- 경로 추가 function --------------------------------------
+
+/**
+ *  siteFlag >> FX 외환, CIB 기업, IB 인뱅 , OIB 오픈뱅킹 
+ */
+/*  function doMultiLocationByParm(siteFlag, url, tobeUrl) {
+ 	// IE인경우..
+ 	if(navigator.appName.indexOf("Microsoft") > -1) {
+ 		if(siteFlag=='IB')  		goAscpIb(url); 
+ 		else if(siteFlag=='CIB')  	goAscpCibFromOb(url); 
+ 		else if(siteFlag=='FX')  	goAscpFx(url); 
+ 	} else {
+ 		goOibAscp(tobeUrl);
+ 	}
+ } */
+ 
+ // Ascp 멀티 로케이션
+ function doAscpMultiLocation(tobeUri, uri) {
+	 
+	// 타브라우저이면서 uri경로가 인뱅일 시
+	if(navigator.appName.indexOf("Microsoft") == -1 && navigator.userAgent.indexOf("Trident") == -1) {
+		alert("해당 메뉴는 Internet Explorer에서만 지원됩니다.");
+		return false;
+	}
+	
+	// 브라우저가 ie일 시 IB경로로 -> IB경로는 무조건 있음
+	if(navigator.appName.indexOf("Microsoft") > -1 || navigator.userAgent.indexOf("Trident") != -1) {
+		var uri= 'http://ib.standardchartered.co.kr/nottemplate/common/ib_ascp.jsp?ReturnURL='+url;
+	    if (uri.indexOf('?') == -1) {
+	    	uri += '?fromOb=Y&langCode=KR&secureData='+getOBSFD();
+	    } else {
+	    	uri += '&fromOb=Y&langCode=KR&secureData='+getOBSFD();
+	    }
+	    setCookie("PRE_ASCP", uri); // 나가는 경로를 쿠키에 남긴다.
+		setCookie("PRE_SECUREDATA", getOBSFD()); // 나가는 경로를 쿠키에 남긴다.
+		//alert("PRE_ASCP>>>>>>"+getCookie("PRE_ASCP"));; // 나가는 경로를 쿠키에 남긴다.
+		var preAscpUrl = "http://"+SC_URLOWW+"/gw/preAscp.html";
+		location.replace(preAscpUrl);
+	
+	// ToBe URL이 Null이면 -> null일 경우도 있음
+	} else if(tobeUri == "" || tobeUri == null) {
+		
+			alert("해당 메뉴는 Internet Explorer에서만 지원됩니다.");
+			return false;
+		
+	
+	// 타브라우저이면서 null이 아닐 경우 -> OIB경로와 홈페이지 경로로 나누어 줘야한다.(SSO처리때문)
+	} else if(tobeUri != ""){
+		
+		if (uri.indexOf('?') == -1) {
+			tobeUri += '?loginCheck=Y&certLogin=Y&toGB=&langCode=KR&fromOb=Y&secureData='+getOBSFD();
+
+		} else {
+			tobeUri += '&loginCheck=Y&certLogin=Y&toGB=&langCode=KR&fromOb=Y&secureData='+getOBSFD();
+		}
+
+		var tobeUri= SC_URLOIB+'/nottemplate/common/oib_ascp.jsp?ReturnURL='+tobeUri;
+		location.replace(tobeUri);
+		
+	} else { /* ignore. */ }
+	
+	return false;
+ }
+ 
+
+// 인터넷뱅킹
+function goAscpIb(url) {
+	// 타브라우저이면서 uri경로가 인뱅일 시
+	if(navigator.appName.indexOf("Microsoft") == -1 && navigator.userAgent.indexOf("Trident") == -1) {
+		
+			alert("해당 메뉴는 Internet Explorer에서만 지원됩니다.");
+			return false;
+		
+		return false;
+	}
 
 	
-	<style type="text/css">
-	.w2modal { filter:alpha(opacity=0);opacity:0; }
-	</style>
-</head>
-<body></body>
+	var uri= 'http://ib.standardchartered.co.kr/nottemplate/common/ib_ascp.jsp?langCode=KR&certLogin=Y&ReturnURL='+url;
+	
+	
+    if (uri.indexOf('?') == -1) {
+    	uri += '?fromOb=Y&langCode=KR&secureData='+getOBSFD();
+    } else {
+    	uri += '&fromOb=Y&langCode=KR&secureData='+getOBSFD();
+    }
+	setCookie("PRE_ASCP", uri); // 나가는 경로를 쿠키에 남긴다.
+    setCookie("PRE_SECUREDATA", getOBSFD()); // 나가는 경로를 쿠키에 남긴다.
+	//alert("PRE_ASCP>>>>>>"+getCookie("PRE_ASCP"));; // 나가는 경로를 쿠키에 남긴다.
+	var preAscpUrl = "http://"+SC_URLOWW+"/gw/preAscp.html";
+	location.replace(preAscpUrl);
+	return false;
+}
+
+// 기업 Link
+function goAscpCibFromOb(url) {
+	// 타브라우저이면서 uri경로가 인뱅일 시
+	if(navigator.appName.indexOf("Microsoft") == -1 && navigator.userAgent.indexOf("Trident") == -1) {
+		
+			alert("해당 메뉴는 Internet Explorer에서만 지원됩니다.");
+			return false;
+		
+		return false;
+	}
+
+	
+	var uri= SC_URLCIB+"/3rdParty/cib_ascp.jsp?ReturnURL="+url+"&channelGB=CIBMain&directLogin=N";
+	
+	
+    if (uri.indexOf('?') == -1) {
+    	uri += '?fromOb=Y&langCode=KR&secureData='+getOBSFD();
+    } else {
+    	uri += '&fromOb=Y&langCode=KR&secureData='+getOBSFD();
+    }
+
+    setCookie("PRE_ASCP", uri); // 나가는 경로를 쿠키에 남긴다.
+	setCookie("PRE_SECUREDATA", getOBSFD()); // 나가는 경로를 쿠키에 남긴다.
+	
+	var preAscpUrl = "http://"+SC_URLOWW+"/gw/preAscp.html";
+	location.replace(preAscpUrl);
+	return false;
+}
+
+//기업 Link 새탭
+function goAscpTabCibFromOb(url) {
+	// 타브라우저이면서 uri경로가 인뱅일 시
+	if(navigator.appName.indexOf("Microsoft") == -1 && navigator.userAgent.indexOf("Trident") == -1) {
+		
+			alert("해당 메뉴는 Internet Explorer에서만 지원됩니다.");
+			return false;
+		
+		return false;
+	}
+
+	
+	var uri= SC_URLCIB+"/3rdParty/cib_ascp.jsp?ReturnURL="+url+"&channelGB=CIBMain&directLogin=N";
+	
+	
+    if (uri.indexOf('?') == -1) {
+    	uri += '?fromOb=Y&langCode=KR&secureData='+getOBSFD();
+    } else {
+    	uri += '&fromOb=Y&langCode=KR&secureData='+getOBSFD();
+    }
+
+    setCookie("PRE_ASCP", uri); // 나가는 경로를 쿠키에 남긴다.
+	setCookie("PRE_SECUREDATA", getOBSFD()); // 나가는 경로를 쿠키에 남긴다.
+	
+	var preAscpUrl = "http://"+SC_URLOWW+"/gw/preAscp.html";
+	window.open(preAscpUrl);
+	return false;
+}
+
+//구매카드 Link
+function goAscpCibBuy(url) {
+	// 타브라우저이면서 uri경로가 인뱅일 시
+	if(navigator.appName.indexOf("Microsoft") == -1 && navigator.userAgent.indexOf("Trident") == -1) {
+		
+			alert("해당 메뉴는 Internet Explorer에서만 지원됩니다.");
+			return false;
+		
+		return false;
+	}
+
+	var uri= SC_URLCIB+"/3rdParty/buy_ascp.jsp?ReturnURL="+url;
+    if (uri.indexOf('?') == -1) {
+    	uri += '?fromOb=Y&langCode=KR&secureData='+getOBSFD();
+    } else {
+    	uri += '&fromOb=Y&langCode=KR&secureData='+getOBSFD();
+    }
+
+    setCookie("PRE_ASCP", uri); // 나가는 경로를 쿠키에 남긴다.
+	setCookie("PRE_SECUREDATA", getOBSFD()); // 나가는 경로를 쿠키에 남긴다.
+	
+	var preAscpUrl = "http://"+SC_URLOWW+"/gw/preAscp.html";
+	location.replace(preAscpUrl);
+	return false;
+}
+
+// 외환 Link
+function goAscpFx(url) {
+	// 타브라우저이면서 uri경로가 인뱅일 시
+	if(navigator.appName.indexOf("Microsoft") == -1 && navigator.userAgent.indexOf("Trident") == -1) {
+		
+			alert("해당 메뉴는 Internet Explorer에서만 지원됩니다.");
+			return false;
+		
+		return false;
+	}
+	
+	var ASCP_FX = "http://fx.standardchartered.co.kr/3rdParty/fxportal_ascp.jsp";
+	if( "EN"=='KR' )	ASCP_FX = "http://fx.standardchartered.co.kr/3rdParty/fxportal_eng_ascp.jsp";
+	uri = ASCP_FX +"?ReturnURL="+ url +"&secureData="+ getOBSFD();
+	
+	setCookie("PRE_ASCP", uri); // 나가는 경로를 쿠키에 남긴다.
+	setCookie("PRE_SECUREDATA", getOBSFD()); // 나가는 경로를 쿠키에 남긴다.
+	
+	var preAscpUrl = "http://"+SC_URLOWW+"/gw/preAscp.html";
+	location.replace(preAscpUrl);
+	return false;
+}
+
+// OIB쪽으로 나가는 function
+function  goOibAscp(url) {
+	if (url.indexOf('?') == -1) {
+		url += '?loginCheck=Y&certLogin=Y&toGB=&langCode=KR&fromOb=Y&secureData='+getOBSFD();
+
+	} else {
+		url += '&loginCheck=Y&certLogin=Y&toGB=&langCode=KR&fromOb=Y&secureData='+getOBSFD();
+	}
+
+	var uri= SC_URLOIB+'/nottemplate/common/oib_ascp.jsp?langCode=KR&ReturnURL='+url;
+	location.replace(uri);
+	
+	return false;
+}
+
+/**
+ * 1. 홈페이지에서 -> 오픈뱅킹으로 sso 를 사용할때만 사용할것~
+ * 2. 오픈후, 팝업에서 오픈뱅킹 ->  타사이트 이동 불가!!~~
+ */
+function goOibAscpPopup(url, ww,hh){
+	if(!url) {
+		alert("이동할 URL 을 입력해 주세요.");
+		return false;
+	}
+	if(!ww) ww = 900;
+	if(!hh) hh = 700;
+	
+	if (url.indexOf('?') == -1) {
+		url += '?loginCheck=Y&certLogin=Y&toGB=&langCode=KR&fromOb=Y&secureData='+getOBSFD();
+
+	} else {
+		url += '&loginCheck=Y&certLogin=Y&toGB=&langCode=KR&fromOb=Y&secureData='+getOBSFD();
+	}
+
+	var popLink= SC_URLOIB+'/nottemplate/common/oib_ascp.jsp?langCode=KR&ReturnURL='+url;
+	
+	if( popLink!=null && popLink!='undefined' && popLink!=undefined && popLink!='') {
+		//location.href= link;
+		winobject = window.open(popLink,'open_win','toolbar=no,status=no,width='+ww+',height='+hh+',left=50,top=40');
+	}
+	return false;
+}
+
+
+// OIB 로그인
+// - 로그인 후 리턴될 url 지정
+function goAscpLoginByAscp(url) {
+	if (url.indexOf('?') == -1) {
+		url += '?loginCheck=Y&certLogin=Y&toGB=&langCode=KR&fromOb=Y&secureData='+getOBSFD();
+	} else {
+		url += '&loginCheck=Y&certLogin=Y&toGB=&langCode=KR&fromOb=Y&secureData='+getOBSFD();
+	}
+	location.replace('https://open.standardchartered.co.kr\/nottemplate\/common\/oib_ascp.jsp?langCode=KR&ReturnURL=http\:\/\/www.standardchartered.co.kr\/3rdParty\/portal_ascp.jsp?ascpURL='+url);
+
+	//alert( location.href );
+	return false;
+}
+
+// OIB 로그인
+// - 로그인 요청 url로 돌아옴
+function goAscpLogin() {
+	location.replace('https://open.standardchartered.co.kr\/nottemplate\/common\/oib_ascp.jsp?langCode=KR&ReturnURL=http\:\/\/www.standardchartered.co.kr\/3rdParty\/portal_ascp.jsp?ascpURL=/np/kr/pl/et/ExchangeRateP1.jsp');
+	return false;
+}
+
+</script>
+                                
+<!-- 자동 로그아웃 안내 레이아웃 include -->
+
+
+<script type="text/javascript">
+// 언어 변경 ( 국문 )
+function ConvLan( lang, url, mMenuId ) {
+	var mn       = mMenuId || '0000000' ,	// 메뉴 아이디가 없으면 기본 값
+		strQuery = ''                    	// 넘겨 받은 언어 한글(KR), 영어(EN)
+	;
+	
+	//alert( 'lang -- '+ lang + ', url - ' + url + ', mMenuId - ' + mMenuId );
+	
+	lang = lang || '';							// 넘겨 받은 언어 값이 없다면..
+	if ( lang !== '' ) strQuery = '?PARAM_LANG_CODE=' + lang;
+	
+	if      ( lang === 'KR' ) { return korConvLan(); }
+	else if ( lang === 'EN' ) { return engConvLan(); }
+	
+	// ! 영문 시작
+	function engConvLan() {
+		// 퍼스널
+		// 시작하기 이면
+		if(mn.substring(0, 4) == "HC01") {
+			doLocation("/np/en/pl/wb/EnWaytobankInfo.jsp" + strQuery);
+			
+		//저축하기
+		} else if(mn.substring(0, 4) == "HC02") {
+			doLocation("/np/en/pl/se/EnSavingInfo.jsp" + strQuery);
+			
+		//대출하기
+		} else if(mn.substring(0, 4) == "HC03") {
+			doLocation("/np/en/pl/bw/EnLoanInfo.jsp" + strQuery);
+			
+		//투자하기
+		} else if(mn.substring(0, 4) == "HC04") {
+			doLocation("/np/en/pl/it/EnInvestInfo.jsp" + strQuery);
+			
+		//자금설계
+		} else if(mn.substring(0, 4) == "HC05") {
+			doLocation("/np/en/pl/pn/EnInsurance.jsp" + strQuery);
+		
+		// 프라이어리티
+		// 소개
+		} else if(mn.substring(0,6) == "HR0001" || mn.substring(0,6) == "HR0000"){
+			doLocation("/np/prb/en/Index.jsp" + strQuery);
+		
+		// 전용서비스 
+		} else if(mn.substring(0,6) == "HR0002"){
+			doLocation("/np/prb/en/Index.jsp" + strQuery);
+		
+		// 투자정보 
+		} else if(mn.substring(0,6) == "HR0003"){
+			doLocation("/np/prb/en/Index.jsp" + strQuery);
+		
+		// 거래지점 찾기
+		} else if(mn.substring(0,6) == "HR0004"){
+			doLocation("/np/prb/en/Index.jsp" + strQuery);
+		
+		// 나의 전담매니저
+		} else if(mn.substring(0,6) == "HR0005"){
+			doLocation("/np/prb/en/Index.jsp" + strQuery);
+		
+		// 프라이빗 뱅크
+		// 명품프라이빗 뱅크
+		} else if(mn.substring(0,6) == "HB0000"){
+			doLocation("/np/en/cms/pe/pe/EnPrivateIndex.jsp" + strQuery);
+		
+		} else if(mn.substring(0,6) == "HB0001"){
+			doLocation("/np/en/cms/pe/pe/EnPrivate1.jsp?menuId=HE03010100000000&rnb=1&rnbStep=1&PARM_LANG_CODE=EN");
+		
+		// 자산관리 서비스
+		} else if(mn.substring(0,6) == "HB0002"){
+			doLocation("/np/en/cms/pe/pe/EnPrivate4.jsp" + strQuery);
+		
+		// 성공승계 서비스
+		} else if(mn.substring(0,6) == "HB0003"){
+			doLocation("/np/en/cms/pe/pe/EnPrivate5.jsp" + strQuery);
+		
+		// 사회공헌 서비스
+		} else if(mn.substring(0,6) == "HB0004"){
+			doLocation("/np/en/cms/pe/pe/EnPrivate6.jsp" + strQuery);
+		
+		// 뉴스/이벤트
+		} else if(mn.substring(0,6) == "HB0005"){
+			doLocation("/np/en/cms/pe/pe/EnPrivateIndex.jsp" + strQuery);
+		
+		// 기업고객
+		// 운영하기
+		} else if(mn.substring(0,6) == "HZ0000"){
+			doLocation("/np/en/bs/im/EnBizIndex.jsp" + strQuery);
+		
+		} else if(mn.substring(0,6) == "HZ0001"){
+			doLocation("/np/en/bs/wk/EnBiz.jsp" + strQuery);
+		
+		// 키우기
+		} else if(mn.substring(0,6) == "HZ0002"){
+			doLocation("/np/en/bs/im/EnBizExpansionList.jsp" + strQuery);
+		
+		// 관리하기
+		} else if(mn.substring(0,6) == "HZ0003"){
+			doLocation("/np/en/bs/im/EnBizProtectionList.jsp" + strQuery);
+		
+		// 불리기
+		} else if(mn.substring(0,6) == "HZ0004"){
+			doLocation("/np/en/bs/im/EnYieldEnhancementList.jsp" + strQuery);
+		}
+		// 영문 Intro
+		else {
+			
+			doIntroLocation('/np/en/EnIntro.jsp', lang);
+		}
+	};
+	// ! 영문 종료
+
+	// ! 국문 시작
+	function korConvLan() {
+		// Ways to Bank
+		if(mn.substring(0, 6) == "HE0001") {
+			doLocation("/np/kr/pl/wb/WaytobankInfo.jsp" + strQuery);
+			
+		//Save
+		} else if(mn.substring(0, 6) == "HE0002" || mn.substring(0, 6) == "HE0000") {
+			doLocation("/np/kr/pl/se/SavingInfo.jsp" + strQuery);
+			
+		// Borrow
+		} else if(mn.substring(0, 6) == "HE0003") {
+			doLocation("/np/kr/pl/bw/LoanInfo.jsp" + strQuery);
+			
+		// Invest
+		} else if(mn.substring(0, 6) == "HE0004") {
+			doLocation("/np/kr/pl/it/InvestInfo.jsp" + strQuery);
+			
+		//Insurance
+		} else if(mn.substring(0, 6) == "HE0005") {
+			doLocation("/np/kr/pl/pn/AssetInfo.jsp" + strQuery);
+			
+		// 프라이빗 뱅크
+		// 명품프라이빗 뱅크
+		} else if(mn.substring(0,6) == "HE0300"){
+			doLocation("/np/kr/cms/pe/pe/PrivitebankInfo.jsp" + strQuery);
+		
+		} else if(mn.substring(0,6) == "HE0301"){
+			doLocation("/np/kr/cms/pe/pe/PrivitebankInfo1.jsp" + strQuery);
+		
+		// 자산관리 서비스
+		} else if(mn.substring(0,6) == "HE0302"){
+			doLocation("/np/kr/cms/pe/pe/assetmanagement_info_1.jsp" + strQuery);
+		
+		// 성공승계 서비스
+		} else if(mn.substring(0,6) == "HE0303"){
+			doLocation("/np/kr/cms/pe/pe/succession_info_1.jsp" + strQuery);
+		
+		// 사회공헌 서비스
+		} else if(mn.substring(0,6) == "HE0304"){
+			doLocation("/np/kr/cms/pe/pe/contribution_info_1.jsp" + strQuery);
+		
+		// 기업 뱅킹
+		// Manage 
+		} else if(mn.substring(0,6) == "HE0400"){
+			doLocation("/np/kr/bs/wk/IndexSem.jsp" + strQuery);
+		
+		} else if(mn.substring(0,6) == "HE0401"){
+			doLocation("/np/kr/bs/wk/WorkingCapitalInfo.jsp" + strQuery);
+		
+		// Grow 
+		} else if(mn.substring(0,6) == "HE0402"){
+			doLocation("/np/kr/bs/be/BizExpansionList.jsp" + strQuery);
+		
+		// Protect 
+		} else if(mn.substring(0,6) == "HE0403"){
+			doLocation("/np/kr/cms/bp/BizProtectionList.jsp" + strQuery);
+		
+		// Maximise 
+		} else if(mn.substring(0,6) == "HE0404"){
+			doLocation("/np/kr/bs/ye/YieldEnhancementList.jsp" + strQuery);
+		
+		}
+		// 국문 인트로
+		else {
+			
+			doIntroLocation('/np/kr/Intro.jsp', lang);
+		}
+	};
+	// ! 국문 종료
+}
+
+/**
+ * 인트로 페이지 이동 
+ * window.location.href 와 같지 않습니다.
+ */
+function doIntroLocation(uri, argLang){
+	var frm      = $('<form/>') .attr({id:'introSubmitFrm', name:'introSubmitFrm', method:'post', action: '' })      ,    // 폼 요소 생성
+		frmElem1 = $('<input/>').attr({type:'hidden', id:'PARAM_LANG_CODE', name:'PARAM_LANG_CODE', value:argLang})      // 폼 인풋 요소 생성
+	;
+	
+	// 브라우저가 ie이면서 uri경로가 인뱅일 시 
+	if( (navigator.appName.indexOf("Microsoft") > -1 || navigator.userAgent.indexOf("Trident") != -1)&& 
+			(uri.indexOf("http://ib.standardchartered.co.kr") > -1 || uri.indexOf("http://biz.standardchartered.co.kr") > -1 || uri.indexOf("krs2b") > -1)) {
+		var uri= 'http://ib.standardchartered.co.kr/nottemplate/common/ib_ascp.jsp?ReturnURL='+uri;
+		if (uri.indexOf('?') == -1) {
+			uri += '?fromOb=Y&langCode=KR&secureData='+getOBSFD();
+		} else {
+			uri += '&fromOb=Y&langCode=KR&secureData='+getOBSFD();
+		}
+		setCookie("PRE_ASCP", uri); // 나가는 경로를 쿠키에 남긴다.
+		setCookie("PRE_SECUREDATA", getOBSFD()); // 나가는 경로를 쿠키에 남긴다.
+		//alert("PRE_ASCP>>>>>>"+getCookie("PRE_ASCP"));; // 나가는 경로를 쿠키에 남긴다.
+		var preAscpUrl = "http://"+SC_URLOWW+"/gw/preAscp.html";
+		location.replace(preAscpUrl);
+	
+	// 타브라우저이면서 uri경로가 인뱅일 시
+	} else if( (navigator.appName.indexOf("Microsoft") == -1 && navigator.userAgent.indexOf("Trident") == -1)&& 
+			(uri.indexOf("http://ib.standardchartered.co.kr") > -1 || uri.indexOf("http://biz.standardchartered.co.kr") > -1 || uri.indexOf("krs2b") > -1)) {
+		
+		
+			alert("해당 메뉴는 Internet Explorer에서만 지원됩니다.");
+			return false;
+		
+		
+	} else {
+		
+		// OIB경로일 시에는 
+		if(uri.indexOf(SC_URLOIB) > -1) {
+			
+			if (uri.indexOf('?') == -1) {
+				uri += '?loginCheck=Y&certLogin=Y&toGB=&langCode=KR&fromOb=Y&secureData='+getOBSFD();
+
+			} else {
+				uri += '&loginCheck=Y&certLogin=Y&toGB=&langCode=KR&fromOb=Y&secureData='+getOBSFD();
+			}
+
+			var uri= SC_URLOIB+'/nottemplate/common/oib_ascp.jsp?ReturnURL='+uri;
+			location.replace(uri);
+			
+		// 홈페이지 경로일 시
+		} else {
+			// url의 프로토콜이 http:일 때 내부에 들어오는 경우는 https:로 바꾼다.
+			//if((location.protocol).indexOf("http:") > -1) {
+			//	uri = uri.replace("http:", "https:");
+			//}
+			
+			// #### HTMLFORMElement 생성 시작 ####
+			// 1. 기존 폼 삭제
+			$('body').find('#introSubmitFrm').remove();
+			
+			// 2. input 요소 삽입
+			frm.append( frmElem1 );
+			
+			// 3. 폼 요소 바디 삽입
+			$('body').append( frm );
+			
+			// 4.인트로 서브 밋
+			frm.attr('action', uri);
+			frm.submit();
+			// #### HTMLFORMElement 생성 끝 ####
+		}
+	}
+	
+	return false;
+}
+</script>
+
+
+<script type="text/javascript">
+
+function goBreeze( url_1, url_2, doFunc, argCmd ) {
+	var isConfirm      ,
+		arrArgCmd = []
+	;
+	
+	// 모바일 경우
+	/* 20130802 모바일 체크 부분 주석 처리
+	if ( isNpMobile() ) {
+		isConfirm = jumptoConfirm( langCode );
+		
+		if ( isConfirm ) location.href = "http://breezebanking.com";
+		else             return false;
+	}
+	// 모바일이 아닐 경우
+	else {
+	*/
+		// argCmd 아규먼트 처리    -- goBreeze('', '', 'popup/655/600') 형태로 들어온 경우
+		if      ( typeof argCmd !== 'undefined' && argCmd !== '' ) arrArgCmd = argCmd.split('\/');
+		
+		// eval로 함수 평가 후 처리 -- doFunc 아규먼트는 함수의 이름이다.
+		if      ( url_2  !== ''        ) eval( doFunc + "('"+ url_1 +"', '" + url_2 + "');" );
+		else if ( arrArgCmd.length > 0 ) eval( doFunc + "('"+ url_1 +"', '"+ arrArgCmd[0] +"', '"+ arrArgCmd[1] +"', '"+ arrArgCmd[2] +"');" );
+		else                             eval( doFunc + "('"+ url_1 +"');" );
+		
+		/* 활성화된 코드는 아래에 주석된 코드와 동일하게 동작한다.
+		if      ( doFunc == 'goAscpIb'              ) goAscpIb(url_1);
+		else if ( doFunc == 'goOibAscp'             ) goOibAscp(url_1);
+		else if ( doFunc == 'speedPop'              ) speedPop(url_1);
+		else if ( doFunc == 'doSimpleLocation'      ) doSimpleLocation(url_1);
+		else if ( doFunc == 'doSimpleWinLocation'   ) doSimpleWinLocation(url_1, 'popup', '655' ,'600' );
+		else if ( doFunc == 'doLocation'            ) doLocation(url_1);
+		else if ( doFunc == 'doSimpleMultiLocation' ) doSimpleMultiLocation(url_1, url_2 );
+		else return false;
+		*/
+	//}
+}
+
+
+//20130513추가  크로스브라우징, 모바일기기 체크로직
+var isios=(/(ipod|iphone|ipad)/i).test(navigator.userAgent);//ios
+var isiPhone = (/(ipod|iphone)/i).test(navigator.userAgent);//iPhone
+var isiPad=(/(ipod|iphone|ipad)/i).test(navigator.userAgent);//iPad
+var isandroid=(/android/i).test(navigator.userAgent);//android
+
+function doChkBrwLink(uri1,uri2){
+	if(navigator.appName.indexOf("Microsoft") > -1 || navigator.userAgent.indexOf("Trident") != -1){
+
+		goAscpIb(uri1);
+
+	}else if(isios || isandroid){
+
+		alert("모바일에서는 접속할 수 없습니다.");
+
+	}else{
+	
+		goOibAscp(uri2);
+	
+	}
+}
+
+</script>
+<script>
+//****************************************************
+//2013.05.16 맥북에서 js include 가 되지 않아서 임시로 해당 js 를 직접 삽입. 모바일 구분 임시 스크립트 삽입 	
+//****************************************************
+var typeMSIE         = "MSIE";
+var typeCHROME       = "Chrome";
+var typeSAFARI       = "Safari";
+var typeMOBILESAFARI = "Mobile Safari";
+var typeFIREFOX      = "Firefox";
+var typeFIREFOX36    = "Firefox36";
+var typeOPERA        = "Opera";
+
+var typeMOBILE       = "Mobile";
+var typeNETSCAPE     = "Netscape";
+
+var typeUNSUPPORT    = "Unsupport";
+
+var typeWIN32        = "Win32";
+var typeWIN64        = "Win64";
+var typeMACINTEL     = "MacIntel";
+var typeMACINTEL106  = "MacIntel106";
+var typeMACPPC       = "MacPPC";
+var typeMACOSX105_1  = "Mac OS X 10_5";
+var typeMACOSX105_2  = "Mac OS X 10.5";
+var typeMACOSX106_1  = "Mac OS X 10_6";
+var typeMACOSX106_2  = "Mac OS X 10.6";
+var typeLINUX        = "Linux";
+var typeLINUX32      = "Linux i";
+var typeLINUX64      = "Linux x86_64";
+
+var typeIPHONE       = "iPhone";
+var typeIPHONESIMUL  = "iPhone Simulator";
+var typeIPAD         = "iPad";
+var typeIPOD         = "iPod";
+var typeWINPHONE     = "Windows Phone";
+var typeANDROID      = "Android";
+
+var typeUBUNTU       = "Ubuntu";
+var typeFEDORA       = "Fedora";
+var typeUBUNTU10     = "Ubuntu10";
+var typeUBUNTU11     = "Ubuntu11";
+var typeFEDORA12     = "Fedora12";
+var typeFEDORA14     = "Fedora14";
+var typeFEDORA17     = "Fedora17";
+var type64           = "64";
+var type32           = "32";
+var typex64          = "x64";
+var typex32          = "x32";
+
+var korMsg           = "모바일 기기에서는 브리즈 오픈뱅킹이 지원되지 않습니다. 모바일 뱅킹용 브리즈 앱을 사용하시겠습니까?";
+var engMsg           = "Breeze open banking is not available from mobile devices. Would you run Breeze App, instead?";
+
+function NP_CheckOS()
+{
+ p = navigator.platform;
+ a = navigator.userAgent;
+ if (p == typeWIN32) {
+     if (a.search(typeWINPHONE) >= 0) {
+         return typeWINPHONE;
+     } else {
+         return typeWIN32;
+     }
+ } else if (p == typeMACINTEL) {
+     if (p.search(typeIPHONE) >= 0) {
+         return typeIPHONE;
+     } else if (p.search(typeIPAD) >= 0) {
+         return typeIPAD;
+     } else if (p.search(typeIPOD) >= 0) {
+         return typeIPOD;
+     } else {
+         //if (useMac106NoSign == true) {
+             if (a.search(typeMACOSX105_1) >= 0 || a.search(typeMACOSX105_2) >= 0 || a.search(typeMACOSX106_1) >= 0 || a.search(typeMACOSX106_2) >= 0) {
+                 return typeMACINTEL106;
+             } else {
+                 return typeMACINTEL;
+             }
+         //} else {
+         //    return typeMACINTEL;
+         //}
+     }
+ } else if (p == typeMACPPC) {
+     return typeMACPPC;
+ } else if (p.search(typeLINUX) >= 0) {
+     if (a.search(typeANDROID) >= 0) {
+         return typeANDROID;
+     } else {
+         return typeLINUX;
+     }
+ } else if (p == typeIPHONESIMUL) {
+     return typeIPHONE;
+ } else if (p == typeIPHONE) {
+     return typeIPHONE;
+ } else if (p == typeIPAD) {
+     return typeIPHONE;
+ } else if (p == typeIPOD) {
+     return typeIPHONE;
+ } else {
+     return typeUNSUPPORT;
+ }
+}
+
+function isNpMobile() {
+ os = NP_CheckOS();
+ if (os == typeIPHONE || os == typeIPAD || os == typeIPOD || os == typeWINPHONE || os == typeANDROID) return true;
+ else return false;
+}
+
+function jumptoConfirm( argLang ) {
+ var confirmLeave;
+
+ if      ( argLang === 'KR' ) confirmLeave = confirm( korMsg );
+ else if ( argLang === 'EN' ) confirmLeave = confirm( engMsg );
+
+ return confirmLeave;
+}
+
+function setCookie( cookieName, cookieValue )
+	{
+		var today = new Date();
+		today.setDate( today.getDate() );
+		document.cookie = cookieName + "=" + escape( cookieValue ) + "; path=/; domain=."+docmain+";"
+	}
+
+</script>
+ 
+<script src="/np/common/js/KR/PrdctCookie.js"></script> <!-- 쿠키가져오는 function -->
+
+
+
+
+
+
+
+
+<script>
+
+
+// 실명인증 세션 삭제
+
+
+
+function nameSessionNode(){
+//	var ajaxObj = new Ajax.Request('/np/kr/cm/cm/sessionAttr.jsp', {method:'get', parameters:'', onComplete:getXMLCallback});
+	jQuery.ajaxSetup({cache:false});
+	$.post("/np/kr/cm/cm/sessionAttr.jsp",function(data){
+		var strData = data.toString();
+		var arrData = strData.split("|");
+		if(typeof arrData!="undefined"
+		|| arrData!=null
+		|| arrData.length>0) {
+			var sName   = arrData[0].trim();
+			var sJumin1 = arrData[1].trim();
+			var sJumin2 = arrData[2].trim();
+			rtnSucces(sName,sJumin1,sJumin2);
+			
+		}
+		
+	});
+	
+}
+
+function getXMLCallback(result) {
+	mapXML = result.responseXML;
+	//console.log("-----------------------------------");
+	//console.log(result.responseXML)
+}
+
+</script>
+
+		
+		
+
+
+<h1 class="reveal-head">환율정보</h1>
+    <div class="reveal-body">
+        <!-- <p class="lead">Your couch.It is mine.</p> -->
+        <ul id="linkEx" class="tabs">
+            <li id="link1"><a href="/np/kr/pl/et/ExchangeRateP1.jsp?link=1" onClick="changeLink(1);" title="환율/환가료율조회">환율/환가료율조회</a></li>
+            <li id="link2"><a href="/np/kr/pl/et/ExchangeRateP2.jsp?link=2" onClick="changeLink(2);" title="환율변동추이">환율변동추이</a></li>
+            <li id="link3"><a href="/np/kr/pl/et/ExchangeRateP3.jsp?link=3" onClick="changeLink(3);" title="환율차트보기">환율차트보기</a></li>
+        </ul> 
+        <div class="table-data-full tbl-type-form">
+        
+
+	    <form id="searchForm" name="searchForm">
+	        
+	        <input type="hidden" id="serviceID" name="serviceID"    value="" />
+	        <input type="hidden" id="task"      name="task"         value="" />
+	        <input type="hidden" id="action"    name="action"       value="" />
+	
+	        
+	        <input type="hidden" id="TYPE_CD"       name="TYPE_CD"      value="" />
+	        <input type="hidden" id="CNT_TYPE_CD"   name="CNT_TYPE_CD"  value="" />
+	        <input type="hidden" id="CUR_YEAR"      name="CUR_YEAR"     value="" />
+	        <input type="hidden" id="CUR_MONTH"     name="CUR_MONTH"    value="" />
+	        <input type="hidden" id="CUR_DAY"       name="CUR_DAY"      value="" />
+	
+	    </form>
+        <table class="responsive tb form">
+            <colgroup>
+                <col style="width: 20%" />
+                <col />
+            </colgroup>
+            <caption>환율/환가료율조회</caption>
+            <tbody>
+                <tr>
+                    <th scope="row"><label for="_TYPE_CD">조회구분</th>
+                    <td>
+                        <div class="twelve columns">
+                            <select name="_TYPE_CD" id="_TYPE_CD" title="조회구분 선택목록" onchange="doChangeTypeCd(this);">
+                                <option value="1">고시환율</option>
+                                
+                                <option value="3">LIBOR</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr id="HIDE_TR">
+                    <th scope="row"><label for="_CNT_TYPE_CD">고시회차</th>
+                    <td>
+                        <div class="twelve columns">
+                            <select name="_CNT_TYPE_CD" id="_CNT_TYPE_CD" title="고시회차 선택목록">
+                                <option value="1" selected="selected">최종</option>
+                                <option value="2">최초</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="_CUR_YEAR">조회일자</label></th>
+                    <td><!--  -->
+                        <div class="twelve columns">
+                            <select name="_CUR_YEAR" id="_CUR_YEAR" onchange="doCalendarDay('_CUR_YEAR|_CUR_MONTH|_CUR_DAY');" title="조회기준(년도) 선택목록">
+                            </select>년&nbsp;
+                            <select name="_CUR_MONTH" id="_CUR_MONTH" onchange="doCalendarDay('_CUR_YEAR|_CUR_MONTH|_CUR_DAY');" title="조회기준(월) 선택목록">
+                            </select>월&nbsp;
+                            <select name="_CUR_DAY" id="_CUR_DAY" title="조회기준(일) 선택목록">
+                            </select>일&nbsp;
+                            <!-- 달력 삽입 -->
+                            <input type="button" id="datePickerFrom" name="datePickerFrom" value="조회 시작일" class="button third radius small calendar" title="달력 팝업 열림" />
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <p class="text-center" id="btn_type_1">
+            <a href="#" onclick="doList(); return false;" class="button radius small secondary" title="조회">조회</a>
+        </p>
+
+        <div id="print">
+        <div class="table-data-full" id="tableList1" style="display:none;">
+            <table class="responsive tb" id="HIDE_TB">
+                <colgroup>
+                    <col style="width: 20%" />
+                    <col />
+                </colgroup>
+                <caption>환율/환가료율조회 결과</caption>
+                <tbody>
+                    <tr>
+                        <th scope="row">조회기준고시일시</th>
+                        <td class="text-left" >
+                            <span id="DATETIME1"></span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="responsive tb" >
+                <colgroup>
+                    <col style="width:10%" span="10"/>
+                </colgroup>
+                <caption>환율/환가료율조회 결과</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">국가명</th>
+                        <th scope="col">단위통화</th>
+                        <th scope="col">대고객매매기준율</th>
+                        <th scope="col">매매기준율<br />(기준환율)</th>
+                        <th scope="col">송금받을때<br />(전신매입)</th>
+                        <th scope="col">송금하실때<br />(전신매도)</th>
+                        <th scope="col">현찰파실때<br />(현찰매입)</th>
+                        <th scope="col">현찰사실때<br />(현찰매도)</th>
+                        <th scope="col">대미달러 환산율</th>
+                        <th scope="col">연환가료율</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="original" style="display:none;">
+                        <td id="STATENAME"></td>
+                        <td id="CURRENCY"></td>
+                        <td id="TMP_RATE"></td>
+                        <td id="BUYRATE"></td>
+                        <td id="TTBUYRATE"></td>
+                        <td id="TTSALERATE"></td>
+                        <td id="CASHBUYRATE"></td>
+                        <td id="CASHSALERATE"></td>
+                        <td id="USCHANGERATE"></td>
+                        <td id="YYCHANGERATE"></td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <!-- <ul id="Pagination1" class="pagination"></ul> -->
+        </div>
+
+        <div class="table-data-full" id="tableList2" style="display:none;">
+            <table class="responsive tb">
+                <colgroup>
+                    <col width="30%" />
+                    <col width="*" />
+                    <col width="*" />
+                    <col width="*" />
+                    <col width="*" />
+                    <col width="*" />
+                    <col width="*" />
+                    <col width="*" />
+                </colgroup>
+                <caption>여행자수표 결과</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">조회기준일시</th>
+                        <th scope="col">USD</th>
+                        <th scope="col">100JPY</th>
+                        <th scope="col">GBP</th>
+                        <th scope="col">CAD</th>
+                        <th scope="col">CHF</th>
+                        <th scope="col">AUD</th>
+                        <th scope="col">EUR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="original" style="display:none;">
+                        <td id="DATETIME"></td>
+                        <td id="USD"></td>
+                        <td id="JPY"></td>
+                        <td id="GBP"></td>
+                        <td id="CAD"></td>
+                        <td id="CHF"></td>
+                        <td id="AUD"></td>
+                        <td id="EUR"></td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <!-- <ul id="Pagination2" class="pagination"></ul> -->
+        </div>
+
+        <div class="table-data-full" id="tableList3" style="display:none;">
+            <table class="responsive tb"  >
+                <colgroup>
+                    <col width="30%" />
+                    <col width="*" />
+                    <col width="*" />
+                    <col width="*" />
+                    <col width="*" />
+                    <col width="*" />
+                    <col width="*" />
+                    <col width="*" />
+                </colgroup>
+                <caption>LIBOR 결과</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">조회기준일시</th>
+                        <th scope="col">1주일</th>
+                        <th scope="col">1개월</th>
+                        <th scope="col">2개월</th>
+                        <th scope="col">3개월</th>
+                        <th scope="col">4개월</th>
+                        <th scope="col">5개월</th>
+                        <th scope="col">6개월</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="original" style="display:none;">
+                        <td id="DATETIME"></td>
+                        <td id="ONEW"></td>
+                        <td id="ONEM"></td>
+                        <td id="TWOM"></td>
+                        <td id="THREEM"></td>
+                        <td id="FOURM"></td>
+                        <td id="FIVEM"></td>
+                        <td id="SIXM"></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+            <!-- <ul id="Pagination3" class="pagination"></ul> -->
+
+            <p class="text-center">
+                <a href="#" class="button radius small" onclick="window.print(); return false;" title="인쇄">인쇄</a>
+                <a href="#" class="button radius small" onclick="doExcel(); return false;" title="엑셀받기">엑셀받기</a>
+            </p>
+        </div>
+
+
+        </div><!-- // reveal-body -->
+<!-- Body Container -->
+    </div>
+    
+
+<script language="JavaScript" src="/np/common/js/KR/board.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+// 타이틀 설정
+var title = "환율/환가료율조회";
+document.title = title + " - Standard Chartered";
+
+var curYear     = "";
+var curMonth    = "";
+var curDay      = "";
+var cntTypeCd   = "";
+var typeCd      = "";
+
+/**
+ * 페이지 초기화 & 이벤트 정의 (익명 함수)
+ *
+ * @author 강병곤
+ */
+$(function(){
+    // 상단 링크 네비게이션 변경
+    var val = "1";
+    changeLink(val);
+
+    // 달력 - 조회시작일
+    $("#datePickerFrom").on("click", function() {
+        // YYYY|MM|DD -- Insert Element id parttern
+        goCalendar('_CUR_YEAR|_CUR_MONTH|_CUR_DAY', 'N'); // 'Y'이면 리턴타입이 integer(2012-09-29 -> 2012-9-29)
+        
+    });
+
+    // 조회일자 세팅
+    doCalendar("_CUR_YEAR|_CUR_MONTH|_CUR_DAY", -4);
+
+    // 조회
+    doList();
+}());
+
+/**
+ * 상단 링크 네비게이션 변경
+ *
+ * @author 강병곤
+ */
+function changeLink(val) {
+    
+    // 상단 링크 네비게이션 변경
+    $("#linkEx li").removeClass("active"); // 링크의 active 이름의 class 속성 모두 제거
+    
+    if(val == "") {
+        $("#link1").addClass("active"); // 첫화면으로 세팅
+        
+    } else {
+        $("#link"+val).addClass("active"); // 해당 링크에만 active 클래스 적용
+        
+    }
+    
+}
+
+/**
+ * 리스트를 가져온다
+ *
+ * @author 강병곤
+ */
+function doList() {
+    var searchForm = $(document.forms['searchForm']);
+    //alert("doList() - searchForm ["+ searchForm +"]")
+
+    $('#serviceID', searchForm).val("HP_FP_PR_ExchangeRate.selectExchangeRateList");
+    $('#task'     , searchForm).val("com.scfirstbank.web.fp.pr.task.HP_FP_PR_ExchangeRateTask");
+    $('#action'   , searchForm).val("selectExchangeRateList");
+
+    if (searchForm) {
+        //alert("dolist2 - _CUR_MONTH ["+ $("select[name=_CUR_MONTH]:eq(0) option:selected", document).text() +"]");
+        curYear     = $("select[name=_CUR_YEAR]:eq(0)    option:selected", document).text();
+		curMonth    = $("select[name=_CUR_MONTH]:eq(0)   option:selected", document).text();
+		curDay      = $("select[name=_CUR_DAY]:eq(0)     option:selected", document).text();
+		cntTypeCd   = $("select[name=_CNT_TYPE_CD]:eq(0) option:selected", document).val();
+		typeCd      = $("select[name=_TYPE_CD]:eq(0)     option:selected", document).val();
+		
+        $('#CUR_YEAR'   , searchForm).val(curYear);
+        $('#CUR_MONTH'  , searchForm).val(curMonth);
+        $('#CUR_DAY'    , searchForm).val(curDay);
+        $('#CNT_TYPE_CD', searchForm).val(cntTypeCd);
+        $('#TYPE_CD'    , searchForm).val(typeCd);
+    }
+
+    ajaxCallJsonPost("/np/kr/pl/et/selectExchangeRateList", "searchForm", doListAfter);
+}
+
+/**
+ * 리스트의 결과를 출력한다
+ *
+ * @author 강병곤
+ */
+function doListAfter(result) {
+    var searchForm = $(document.forms['searchForm']);
+    //console.log(" doListAfter() - result =", JSON.stringify(result.vector));
+
+    var typeCd = $("#TYPE_CD").val();
+    var currentDate = convertDate(curYear+curMonth+curDay, "-");
+    //alert("typeCd ["+ typeCd +"], currentDate ["+currentDate+"]");
+
+    if (typeCd == '1') {
+        //  alert("1 typeCd ["+typeCd+"]");
+        // 화면 구성
+        $("#tableList1").show();
+        $("#tableList2").hide();
+        $("#tableList3").hide();
+
+        if ( $.isEmptyObject(result)
+    	|| result.vector == undefined) {
+    	    $("#tableList1").find("tbody tr").filter(".generated").remove();
+    	    //$("#Pagination1").hide();
+    	    //alert("조회 결과 없음(※기능 구현 예정)");
+    	    $("#DATETIME1").html(currentDate);
+            alert(currentDate + '일에 고시된 고시환율은 0회차 까지 되었습니다.');
+
+    	    return false;
+    	} else {
+    	    //$("#Pagination1").show();
+    	    
+    	}
+        
+        var resultParse = JSON.parse(JSON.stringify(result.vector));
+        var resultSize  = resultParse.length;
+        //alert("doListAfter() - resultParse ["+ resultParse +"]\nresultParse.length ["+ resultParse.length +"]")
+        
+        var idx = 0;
+        $.each(result.vector, function(k, v) {
+            // 조회기준고시일시
+            var str = v['TYPE_A_RESULT'].DATETIME;
+            var day = str.substring(0, 4) + "-" + str.substring(4, 6) + "-" + str.substring(6, 8);
+            var time = str.substring(8, 10) + ":" + str.substring(10, 12) + ":" + str.substring(12, 14);
+            $("#DATETIME1").html(day +" "+ time);
+            //return false;
+            v['TYPE_A_RESULT'].TMP_RATE     = addCommas(Number(v['TYPE_A_RESULT'].TMP_RATE    ).toFixed(2));
+            v['TYPE_A_RESULT'].BUYRATE      = addCommas(Number(v['TYPE_A_RESULT'].BUYRATE     ).toFixed(2));
+            v['TYPE_A_RESULT'].TTBUYRATE    = addCommas(Number(v['TYPE_A_RESULT'].TTBUYRATE   ).toFixed(2));
+            v['TYPE_A_RESULT'].TTSALERATE   = addCommas(Number(v['TYPE_A_RESULT'].TTSALERATE  ).toFixed(2));
+            v['TYPE_A_RESULT'].CASHBUYRATE  = addCommas(Number(v['TYPE_A_RESULT'].CASHBUYRATE ).toFixed(2));
+            v['TYPE_A_RESULT'].CASHSALERATE = addCommas(Number(v['TYPE_A_RESULT'].CASHSALERATE).toFixed(2));
+            
+        });
+        
+        var tableInfo = {
+                DATA:                  result.vector ,      // 객체 배열
+                JSON_ARR_NAME:         "TYPE_A_RESULT",     // 객체 이름
+                TABLE_ID:              "tableList1"  ,      // 목록 태그 아이디
+                FIND_ROW:              "tbody tr"    ,      // 생성 로우 지정
+                SEQ_YN:                "Y"           ,      // 리스트 순번 표시 여부
+                EVENT_DATA:            "",
+                "items_per_page":      10,                  // 리스트 표시 개수
+                "num_display_entries": 5,                   // 페이지 목록 개수
+                "num_edge_entries":    2,                   //
+                "prev_text":          "Prev",
+                "next_text":          "Next",
+                "first_text":         "First",
+                "last_text":          "Last"
+        };
+
+        createTableList(tableInfo);
+        //tablePagination(tableInfo, "Pagination1");
+        
+    } else if (typeCd == '2') {
+    	// 2009-01-02
+        // 화면 구성
+        $("#tableList1").hide();
+        $("#tableList2").show();
+        $("#tableList3").hide();
+
+        if ( $.isEmptyObject(result)
+        || result.vector == undefined) {
+            $("#tableList2").find("tbody tr").filter(".generated").remove();
+            //$("#Pagination2").hide();
+            //alert("조회 결과 없음(※기능 구현 예정)");
+
+            return false;
+        } else {
+            //$("#Pagination2").show();
+            
+        }
+        
+        $.each(result.vector, function(k, v) {
+            // 조회기준고시일시
+            v['TYPE_B_RESULT'].USD = addCommas(Number(v['TYPE_B_RESULT'].USD).toFixed(2));
+            v['TYPE_B_RESULT'].JPY = addCommas(Number(v['TYPE_B_RESULT'].JPY).toFixed(2));
+            v['TYPE_B_RESULT'].GBP = addCommas(Number(v['TYPE_B_RESULT'].GBP).toFixed(2));
+            v['TYPE_B_RESULT'].CAD = addCommas(Number(v['TYPE_B_RESULT'].CAD).toFixed(2));
+            v['TYPE_B_RESULT'].CHF = addCommas(Number(v['TYPE_B_RESULT'].CHF).toFixed(2));
+            v['TYPE_B_RESULT'].AUD = addCommas(Number(v['TYPE_B_RESULT'].AUD).toFixed(2));
+            v['TYPE_B_RESULT'].EUR = addCommas(Number(v['TYPE_B_RESULT'].EUR).toFixed(2));
+            
+        });
+
+        var tableInfo = {
+                DATA:                  result.vector ,      // 객체 배열
+                JSON_ARR_NAME:         "TYPE_B_RESULT",     // 객체 이름
+                TABLE_ID:              "tableList2"  ,      // 목록 태그 아이디
+                FIND_ROW:              "tbody tr"    ,      // 생성 로우 지정
+                SEQ_YN:                "Y"           ,      // 리스트 순번 표시 여부
+                EVENT_DATA:            "",
+                "items_per_page":      10,                  // 리스트 표시 개수
+                "num_display_entries": 5,                   // 페이지 목록 개수
+                "num_edge_entries":    2,                   //
+                "prev_text":          "Prev",
+                "next_text":          "Next",
+                "first_text":         "First",
+                "last_text":          "Last"
+        };
+
+        createTableList(tableInfo);
+        //tablePagination(tableInfo, "Pagination2");
+        
+    } else if (typeCd == '3') {
+        // 화면 구성
+        $("#tableList1").hide();
+        $("#tableList2").hide();
+        $("#tableList3").show();
+
+        if ( $.isEmptyObject(result)
+        || result.vector == undefined) {
+            $("#tableList3").find("tbody tr").filter(".generated").remove();
+            //$("#Pagination3").hide();
+            //alert("조회 결과 없음(※기능 구현 예정)");
+
+            return false;
+        } else {
+            //$("#Pagination3").show();
+            
+        }
+        
+        var tableInfo = {
+                DATA:                  result.vector ,      // 객체 배열
+                JSON_ARR_NAME:         "TYPE_C_RESULT",     // 객체 이름
+                TABLE_ID:              "tableList3"  ,      // 목록 태그 아이디
+                FIND_ROW:              "tbody tr"    ,      // 생성 로우 지정
+                SEQ_YN:                "Y"           ,      // 리스트 순번 표시 여부
+                EVENT_DATA:            "",
+                "items_per_page":      10,                  // 리스트 표시 개수
+                "num_display_entries": 5,                   // 페이지 목록 개수
+                "num_edge_entries":    2,                   //
+                "prev_text":          "Prev",
+                "next_text":          "Next",
+                "first_text":         "First",
+                "last_text":          "Last"
+        };
+
+        createTableList(tableInfo);
+        //tablePagination(tableInfo, "Pagination3");
+        
+    }
+
+}
+
+/**
+ * 조회 구분에 따른 폼 변화
+ *
+ * @author 강병곤
+ */
+function doChangeTypeCd(obj) {
+    //alert(" obj.value ["+obj.value+"]");
+    if(obj.value == '1') {
+        $('#HIDE_TR').show();
+        $('#HIDE_TB').show();
+        $("#tableList1").show();
+        $("#tableList2").hide();
+        $("#tableList3").hide();
+        //$("#Pagination1").show();
+        //$("#Pagination2").hide();
+        //$("#Pagination3").hide();
+        
+    } else if(obj.value == '2') {
+        $('#HIDE_TR').hide();
+        $('#HIDE_TB').hide();
+        $("#tableList1").hide();
+        $("#tableList2").show();
+        $("#tableList3").hide();
+        //$("#Pagination1").hide();
+        //$("#Pagination2").show();
+        //$("#Pagination3").hide();
+        
+    } else if(obj.value == '3') {
+        $('#HIDE_TR').hide();
+        $('#HIDE_TB').hide();
+        $("#tableList1").hide();
+        $("#tableList2").hide();
+        $("#tableList3").show();
+        //$("#Pagination1").hide();
+        //$("#Pagination2").hide();
+        //$("#Pagination3").show();
+        
+    } else {
+        $('#HIDE_TR').show();
+        $('#HIDE_TB').show();
+        $("#tableList1").show();
+        $("#tableList2").hide();
+        $("#tableList3").hide();
+        //$("#Pagination1").show();
+        //$("#Pagination2").hide();
+        //$("#Pagination3").hide();
+
+    }
+    
+    // 조회
+    doList();
+    
+}
+
+/**
+ * 엑셀 다운로드
+ *
+ * @author 강병곤
+ */
+function doExcel() {
+    var currencyTypeCd = $('#CURRENCY_TYPE_CD').val();
+    
+    curYear     = $("select[name=_CUR_YEAR]:eq(0)    option:selected", document).text();
+    curMonth    = $("select[name=_CUR_MONTH]:eq(0)   option:selected", document).text();
+    curDay      = $("select[name=_CUR_DAY]:eq(0)     option:selected", document).text();
+    cntTypeCd   = $("select[name=_CNT_TYPE_CD]:eq(0) option:selected", document).val();
+    typeCd      = $("select[name=_TYPE_CD]:eq(0)     option:selected", document).val();
+    
+    if(typeCd == "1") {
+        var currentDay = convertDate(curYear+curMonth+curDay, "-");
+        var str     = "typeCd=" + typeCd + "&cntTypeCd=" + cntTypeCd + "&currentDay=" + currentDay ;
+        location.href = "/np/kr/pl/et/ExcelExchangeRateP1A.jsp?"+str;
+        
+    } else if(typeCd == "2") {
+        var currentDay = convertDate(curYear+curMonth+curDay, "-");
+        var str     = "typeCd=" + typeCd + "&currentDay=" + currentDay ;
+        location.href = "/np/kr/pl/et/ExcelExchangeRateP1B.jsp?"+str;
+        
+    } else if(typeCd == "3") {
+        var currentDay = convertDate(curYear+curMonth+curDay, "-");
+        var str     = "typeCd=" + typeCd + "&currentDay=" + currentDay ;
+        location.href = "/np/kr/pl/et/ExcelExchangeRateP1C.jsp?"+str;
+        
+    } else {
+        alert("잘못된 접근 입니다.");
+        return false;
+        
+    }
+    
+}
+
+/**
+ * 날짜변환
+ * ex) yyyymmdd -> yyyy-mm-dd
+ *
+ * @author 강병곤
+ */
+function convertDate(obj, pattern) {
+    var val    = obj;
+    var re     = /[^0-9]/gi;   // 숫자만 남김.
+    var result = "";
+    var yyyy   = "";
+    var mm     = "";
+    var dd     = "";
+    obj = val.replace(re,"");
+    
+    if(pattern == "undefined"
+    || pattern == "") {
+        pattern = "-";
+        
+    }
+    
+    if(obj.length == 8) {
+        yyyy  = obj.substring(0,4);
+        mm    = obj.substring(4,6);
+        dd    = obj.substring(6);
+        result= yyyy+pattern+mm+pattern+dd;
+        
+    } else if(obj.length == 6) {
+        yyyy  = obj.substring(0,4);
+        mm    = "0"+obj.substring(4,5);
+        dd    = "0"+obj.substring(5);
+        result= yyyy+pattern+mm+pattern+dd;
+    
+    }
+
+    return result;
+}
+//]]>
+</script>
+
+
+				
+	<!-- // reveal-body -->
+<div class="back-to-top">
+	<div> <a href="#page">Back to Top</a> </div>
+</div>
+
+<div class="reveal-foot">
+	<button type="button" class="close-reveal">상담신청 팝업창 닫기<span>&#215;</span></button>
+</div>
+
+</body>
 </html>

@@ -7,10 +7,10 @@ import java.util.Date;
 public class Exchange {
 	
 	private static final SimpleDateFormat sdf = new SimpleDateFormat("yyyy. MM. dd HH:mm:ss");
-	
+		
 	private Integer id;
 
-	private String bank;
+	private String bank;	
 	
 	private String nation;
 
@@ -36,7 +36,7 @@ public class Exchange {
 	
 	public Exchange(String bank, String nation, String monetaryCode, Date date) {
 		super();
-		this.bank = bank;
+		this.bank = bank;		
 		this.nation = nation;
 		this.monetaryCode = monetaryCode;
 		this.date = Calendar.getInstance();
@@ -131,6 +131,16 @@ public class Exchange {
 		this.date = date;
 	}
 
+	// 추가 메소드. 은행명을 한글로
+	public String convertBanktoKorean(String bank) {
+		if (bank.equals("shinhan"))		return "신한";
+		else if (bank.equals("woori"))	return "우리";
+		else if (bank.equals("kiup"))	return "기업";
+		else if (bank.equals("hana"))	return "하나";
+		else if (bank.equals("jeil"))	return "제일";
+		else 							return null;
+	}
+	
 	@Override
 	public String toString() {
 		return "Exchange [id=" + id + ", bank=" + bank + ", nation=" + nation + ", monetaryCode=" + monetaryCode + ", transferSend=" + transferSend

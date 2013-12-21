@@ -20,6 +20,9 @@ public class PageData {
 		URL url = new URL(bankUrl);
 
 		URLConnection conn = url.openConnection();
+		//
+		
+		//
 		BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
 
 
